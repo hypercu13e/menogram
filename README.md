@@ -14,7 +14,8 @@ Machine][wayback-machine]. Niniejszy dokument jest odtworzeniem usuniętego tema
     - $\mathbb{N}^*$ – zbiór liczb naturalnych bez $0$.
     - $\mathbb{Z}$ – zbiór liczb całkowitych
     - $\mathbb{Z}^*$ – zbiór liczb całkowitych bez $0$.
-    - $a..b$ – zbiór liczb całkowitych większych od lub równych $a$ i mniejszych od lub równych $b$.
+    - $a \ldots b$ – zbiór liczb całkowitych większych od lub równych $a$ i mniejszych od lub
+      równych $b$.
 3. Wykorzystywane oznaczenia profesji:
     - w – wojownik
     - p – paladyn
@@ -25,29 +26,12 @@ Machine][wayback-machine]. Niniejszy dokument jest odtworzeniem usuniętego tema
 4. Łączenia profesji zapisywane są jako ciąg jednoliterowych skrótów poszczególnych profesji w
    kolejności zgodnej z kolejnością oznaczeń profesji zdefiniowaną w poprzednim punkcie.
 5. Wykorzystywane funkcje:
-
     - $\mathop{\mathrm{round}}(x)$ – zaokrąglenie liczby $x$ do najbliższej liczby całkowitej.
-      **Połówki zaokrąglane są w kierunku od $0$:**
-
-    $$
-    \begin{align*}
-        \mathop{\mathrm{round}}(5.5) &= 6 \\
-        \mathop{\mathrm{round}}(-5.5) &= -6
-    \end{align*}
-    $$
-
+      **Połówki zaokrąglane są w kierunku od $0$.**
     - $\lfloor x \rfloor$ – zaokrąglenie liczby $x$ w dół do najbliższej liczby całkowitej.
     - $\lceil x \rceil$ – zaokrąglenie liczby $x$ w górę do najbliższej liczby całkowitej.
-    - $\mathop{\mathrm{sgn}}(x)$ – znak liczby $x$:
-
-    $$
-    \mathop{\mathrm{sgn}}(x) = \begin{cases}
-        1, & x > 0 \\
-        0, & x = 0 \\
-        -1, & x < 0
-    \end{cases}
-    $$
-
+    - $\mathop{\mathrm{sgn}}(x)$ – znak liczby $x$, tj. $1$, gdy $x > 0$, $-1$, gdy $x < 0$ lub $0$,
+      gdy $x = 0$.
     - $x \bmod n$ – reszta z dzielenia $x$ przez $n$, $x \in \mathbb{N}, n \in \mathbb{N}^*$.
     - $\min(x, y)$ – mniejsza z liczb $x$ i $y$.
     - $\max(x, y)$ - większa z liczb $x$ i $y$.
@@ -64,7 +48,7 @@ Ponadto twórcy gry mają możliwość modyfikacji utworzonych systemowo statyst
 
     - $l \in \mathbb{N}^*$ – poziom wymagany do założenia przedmiotu. Jeżeli przedmiot nie posiada
       takiego przedmiotu, to przyjmowana jest wartość $1$.
-    - $u \in 0..5$ – poziom ulepszenia przedmiotu.
+    - $u \in 0 \ldots 5$ – poziom ulepszenia przedmiotu.
     - $n \in \mathbb{Z}$ – liczba bonusów rozdanych w daną statystykę przedmiotu.
     - $x \in \mathbb{N}^*$ – poziom przedmiotu, tj. poziom używany do obliczania wartości bonusów,
       który uwzględnia ulepszenie:
@@ -706,11 +690,11 @@ Oznacza to, że dla gracza z poziomem $l$:
 
 -   Dolny limit poziomu innych graczy w grupie to:
 
-    $$\max\left( \min\left( \left\lceil \frac{l - 4.5}{1 + c} \right\rceil, \, l - 14 \right), \, 1 \right)$$
+    $$\max\left( \min\left( \left\lceil \frac{l - 4.5}{1 + c} \right\rceil, \\, l - 14 \right), \\, 1 \right)$$
 
 -   Górny limit poziomu innych graczy w grupie to:
 
-    $$\min(\max(\mathop{\mathrm{round}}((1 + c)l) + 4, \, l + 14), \, 500)$$
+    $$\min(\max(\mathop{\mathrm{round}}((1 + c)l) + 4, \\, l + 14), \\, 500)$$
 
 ### Czas odradzania gracza
 

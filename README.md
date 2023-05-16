@@ -383,7 +383,7 @@ gdzie $c$ zależy od wymaganych przez przedmiot profesji:
 -   wpbmth: $0.9$,
 -   pozostałe profesje: $1.0$.
 
-#### Absorpcja
+#### Absorpcja fizyczna
 
 Występuje w:
 
@@ -393,17 +393,36 @@ Występuje w:
 -   rękawicach,
 -   butach.
 
-Absorpcja fizyczna: $f(x) = \mathop{\mathrm{round}}(0.01pc \cdot R(x))$.
+$f(x) = \mathop{\mathrm{round}}(0.01pc \cdot R(x)),$
 
-Absorpcja magiczna: $f(x) = \mathop{\mathrm{round}}(0.005pc \cdot R(x))$.
-
-$c$ zależy od wymaganych przez przedmiot profesji:
+gdzie $c$ zależy od wymaganych przez przedmiot profesji:
 
 -   m: $6.0$,
 -   t: $4.0$,
 -   pm: $3.0$,
 -   mt: $5.0$,
 -   ​pmt: $3.4$,
+-   pozostałe profesje: $0$.
+
+#### Absorpcja magiczna
+
+Występuje w:
+
+-   zbrojach,
+-   tarczach,
+-   hełmach,
+-   rękawicach,
+-   butach.
+
+$f(x) = \mathop{\mathrm{round}}(0.01pc \cdot R(x)),$
+
+gdzie $c$ zależy od wymaganych przez przedmiot profesji:
+
+-   m: $3.0$,
+-   t: $2.0$,
+-   pm: $1.5$,
+-   mt: $2.5$,
+-   ​pmt: $1.6$,
 -   pozostałe profesje: $0$.
 
 #### Odporność magiczna

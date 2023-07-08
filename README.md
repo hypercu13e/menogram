@@ -88,7 +88,7 @@ Ponadto twórcy gry mają możliwość modyfikacji utworzonych systemowo statyst
 Większość przedmiotów posiada zestandaryzowaną liczbę bonusów, która zależy od typu i rzadkości
 przedmiotu. Wyjątkiem od tej zasady są zazwyczaj stare lub testowe przedmioty.
 
-#### Zbroje, bronie jednoręczne, półtoraręczne, dwuręczne, dystansowe i pomocnicze, różdżki, orby i tarcze
+#### Zbroje, bronie jednoręczne, półtoraręczne, dwuręczne, dystansowe i pomocnicze, kołczany, różdżki, orby i tarcze
 
 -   1 bonus dla przedmiotów zwykłych,
 -   3 bonusy dla przedmiotów unikatowych,
@@ -174,7 +174,7 @@ gdzie $c$ wynosi:
 -   $1.0$ dla różdżek,
 -   $0.8$ dla broni pomocniczych,
 -   $0.7$ dla orbów,
--   $0.4$ dla strzał.
+-   $0.4$ dla strzał i kołczanów.
 
 #### Odporność magiczna
 
@@ -324,7 +324,7 @@ gdzie $c$ wynosi:
 -   $0.892475$ dla broni półtoraręcznych,
 -   $0.4462375$ dla broni dystansowych,
 -   $0.6375$ dla broni pomocniczych,
--   $0.4462375$ dla strzał.
+-   $0.4462375$ dla strzał i kołczanów.
 
 Obrażenia trucizny liczone są przez system: $f(x) = \mathop{\mathrm{round}}(0.0051c \cdot R(x))$,
 gdzie $c$ wynosi:
@@ -333,7 +333,7 @@ gdzie $c$ wynosi:
 -   $2.5$ dla broni półtoraręcznych,
 -   $3.5$ dla broni dystansowych,
 -   $1.05$ dla broni pomocniczych,
--   $0.85$ dla strzał.
+-   $0.85$ dla strzał i kołczanów.
 
 #### Modyfikator rzadkości
 
@@ -586,7 +586,10 @@ $c$ wynosi:
 
 #### Obrażenia dystansowe
 
-Występują w strzałach.
+Występują w:
+
+-   strzałach,
+-   kołczanach.
 
 $f(x) = \mathop{\mathrm{round}}(0.04845 \cdot R(x))$
 
@@ -598,7 +601,8 @@ Występują w:
 -   broniach dystansowych,
 -   różdżkach,
 -   orbach,
--   strzałach.
+-   strzałach,
+-   kołczanach.
 
 Obrażenia te mogą występować również w broniach półtoraręcznych i dwuręcznych, ale ze względu na
 brak dostępu do takich przedmiotów, nie są one tu uwzględnione.
@@ -611,7 +615,7 @@ gdzie $c$ wynosi:
 -   $0.71$ dla broni dystansowych,
 -   $1.0$ dla różdżek,
 -   $0.475$ dla orbów,
--   $0.15$ dla strzał.
+-   $0.15$ dla strzał i kołczanów.
 
 #### Obrażenia od błyskawic
 
@@ -626,7 +630,8 @@ Występują w:
 -   broniach dystansowych,
 -   różdżkach,
 -   orbach,
--   strzałach.
+-   strzałach,
+-   kołczanach.
 
 Obrażenia te mogą występować również w broniach półtoraręcznych, ale ze względu na brak dostępu do
 takich przedmiotów, nie są one tu uwzględnione.
@@ -640,7 +645,7 @@ gdzie $c$ wynosi:
 -   $0.733125$ dla broni dystansowych,
 -   $1.0$ dla różdżek,
 -   $0.733125$ dla orbów,
--   $0.733125$ dla strzał.
+-   $0.733125$ dla strzał i kołczanów.
 
 Obrażenia: $f(x) = \mathop{\mathrm{round}}(10 \cdot 0.0051c \cdot R(x))$,
 
@@ -651,11 +656,14 @@ gdzie $c$ wynosi:
 -   $0.64$ dla broni dystansowych,
 -   $0.85$ dla różdżek,
 -   $0.425$ dla orbów,
--   $0.135$ dla strzał.
+-   $0.135$ dla strzał i kołczanów.
 
 #### Niszczenie pancerza
 
-Występuje w strzałach.
+Występuje w:
+
+-   strzałach,
+-   kołczanach.
 
 $f(x) = \mathop{\mathrm{round}}(0.0008c(x^2 + 130x + 620))$,
 
@@ -672,7 +680,8 @@ Występuje w:
 -   broniach jednoręcznych dla samych paladynów,
 -   broniach półtoraręcznych dla samych paladynów,
 -   broniach dwuręcznych dla samych paladynów,
--   strzałach dla samych tropicieli.
+-   strzałach dla samych tropicieli,
+-   kołczanach dla samych tropicieli.
 
 Wartość zawsze wynosi $1$.
 

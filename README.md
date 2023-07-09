@@ -693,6 +693,127 @@ Wartość zawsze wynosi $1$.
 	https://forum.margonem.pl/?task=forum&show=posts&id=514101
 	'„Wartości bonusów i wpływ ulepszeń na nie” – temat na forum Margonem'
 
+### Wartość przedmiotu
+
+Tworzone przedmioty mają systemowo ustaloną wartość w złocie. O ile twórca przedmiotu nie
+zmodyfikuje tej wartości ręcznie, to podlega ona wzorom przedstawionym w tej sekcji.
+
+#### Wartość ogólna
+
+Wartość, która dotyczy większości przedmiotów w grze. Wyjątkiem są przedmioty opisane w kolejnych
+sekcjach.
+
+$f(x) = \mathop{\mathrm{round}}(0.7c \cdot (3 + r) \cdot 1.05^{k} \cdot pn(x^2 + 2.5x)),$
+
+gdzie:
+
+-   $c$ zależy od typu przedmiotu:
+    -   $1.8$ dla zbroi, broni jednoręcznych, półtoraręcznych, dwuręcznych, dystansowych i
+        pomocniczych, kołczanów, różdżek i orbów,
+    -   $1.4$ dla tarcz,
+    -   $0.75$ dla strzał,
+    -   $0$ dla złota i przedmiotów odnawialnych,
+    -   $1$ dla pozostałych przedmiotów.
+-   $r$ zależy od rzadkości przedmiotu:
+    -   $0$ dla przedmiotów zwykłych,
+    -   $1$ dla przedmiotów unikatowych i ulepszonych,
+    -   $2$ dla przedmiotów heroicznych,
+    -   $3$ dla przedmiotów legendarnych,
+    -   $4$ dla artefaktów. // TODO
+-   $k$ to liczba statystyk znajdujących się w _szablonie przedmiotu_.
+-   $p$ to wartość statystyki `price` lub 1, jeśli przedmiot nie posiada tej statystyki.
+-   $n$ to wartość statystyki `amount` lub 1, jeśli przedmiot nie posiada tej statystyki.
+
+Jeżeli przedmiot nie posiada wymaganego poziomu do jego użycia, to jego wartość wynosi $f(1)$.
+
+Ze względu na to, iż klient gry nie posiada dostępu do szablonów przedmiotów (nie w tej samej
+postaci, w jakiej są one w silniku gry), znalezienie liczby $k$ może być nietrywialne. Jej dobrym
+przybliżeniem jest $\lvert S \setminus I\rvert$, gdzie $S$ to zbiór statystyk posiadanych przez
+_przedmiot_, a $I$ to zbiór następujących statystyk:
+
+-   `bonus`
+-   `bonus_not_selected`
+-   `created`
+-   `enhancement_upgrade_lvl`
+-   `loot`
+-   `lowreq`
+-   `lvlupgs`
+-   `motel`
+-   `nodesc`
+-   `rarity`
+-   `recovered`
+-   `timelimit_upgs`
+
+#### Wartość strzał
+
+Wzór na wartość strzał używany jest tylko do obliczenia początkowej wartości przedmiotu. Operacje
+takie jak łączenie czy dzielenie stosu strzał, modyfikują wartość w inny sposób, który jest opisany
+w osobnej sekcji.
+
+$f(x) = \mathop{\mathrm{round}}(0.0007c \cdot (3 + r) \cdot 1.05^{k} \cdot pn(x^2 + \frac{10}{3}x) + 5),$
+
+gdzie:
+
+-   $c$, $r$, $k$ oraz $p$ zdefiniowane są tak samo, jak we wzorze na wartość ogólną.
+-   $n$ to wartość statystyki `ammo`.
+
+#### Wartość mikstur
+
+Wartość wszelkich mikstur nie zależy od poziomu wymaganego przez przedmiot, a od wartości ich
+leczenia $h$.
+
+##### Mikstury z ilościowym leczeniem
+
+$f(h) = \mathop{\mathrm{round}}(0.0001 \cdot \frac{1}{2^{3 - r} \cdot 10} \cdot (h^2 + 2^{5 - r} \cdot 10000h) + 8),$
+
+gdzie $r$ zdefiniowane jest tak samo, jak we wzorze na wartość ogólną.
+
+##### Mikstury z procentowym leczeniem
+
+Ze względu na niewielką ilość dostępnych mikstur z procentowym leczeniem, wzór na ich wartość jest
+na ten moment nieznany.
+
+##### Mikstury z pełnym leczeniem
+
+$f(h) = \mathop{\mathrm{round}}(0.0001 \cdot 0.0025 \cdot (h^2 + 1600000h) + 8)$
+
+#### Łączenie przedmiotów
+
+Wartość stosu przedmiotu $v$ powstałego z dołączenia do stosu przedmiotów o wartości $v_1$ stosu
+przedmiotów o wartości $v_2$:
+
+$v = v_1 + v_2$
+
+#### Dzielenie przedmiotu
+
+Wartość stosu przedmiotów $v_1$ powstałego z oddzielenia $n_1$ przedmiotów od stosu przedmiotów o
+wartości $v$ i ilości $n$:
+
+$v_1 = \lfloor\frac{n_1}{n} \cdot v\rfloor$
+
+Nowa wartość stosu, od którego oddzielona została część przedmiotów:
+
+$v_2 = \lfloor\frac{n - n_1}{n} \cdot v\rfloor$
+
+#### Używanie przedmiotów
+
+Używanie przedmiotów modyfikuje ich wartość identycznie jak ich dzielenie, gdzie ilość oddzielanych
+przedmiotów zazwyczaj wynosi $1$ (ale nie zawsze, przykładowo, umiejętność łowcy **Podwójny strzał**
+oddziela 2 strzały).
+
+Jedynym wyjątkiem są aktywne błogosławieństwa, których wartość $v_1$ wynosi:
+
+$v_1 = \lfloor\frac{v}{\max(n_1, 1)}\rfloor,$
+
+gdzie:
+
+-   $v$ to wartość ogólna błogosławieństwa.
+-   $n_1$ to ilość pozostałych błogosławieństw w stosie przedmiotów, z którego aktywowane zostało
+    błogosławieństwo.
+
+Wartość stosu, z którego aktywowane zostało błogosławieństwo modyfikowana jest identycznie jak przy
+dzieleniu przedmiotów.
+
 ## Potwory
 
 Sekcja zostanie dodana w przyszłości.

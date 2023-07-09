@@ -718,8 +718,7 @@ gdzie:
     -   $0$ dla przedmiotów zwykłych,
     -   $1$ dla przedmiotów unikatowych i ulepszonych,
     -   $2$ dla przedmiotów heroicznych,
-    -   $3$ dla przedmiotów legendarnych,
-    -   $4$ dla artefaktów. // TODO
+    -   $3$ dla przedmiotów legendarnych.
 -   $k$ to liczba statystyk znajdujących się w _szablonie przedmiotu_.
 -   $p$ to wartość statystyki `price` lub 1, jeśli przedmiot nie posiada tej statystyki.
 -   $n$ to wartość statystyki `amount` lub 1, jeśli przedmiot nie posiada tej statystyki.

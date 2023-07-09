@@ -803,7 +803,7 @@ oddziela 2 strzały).
 
 Jedynym wyjątkiem są aktywne błogosławieństwa, których wartość $v_1$ wynosi:
 
-$v_1 = \lfloor\frac{v}{\max(n_1, 1)}\rfloor,$
+$v_1 = \lfloor\frac{v}{\max(n_1, \\, 1)}\rfloor,$
 
 gdzie:
 

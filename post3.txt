@@ -44,10 +44,13 @@ Poniżej zaprezentowano wartości natywnego pancerza dla wszystkich wymienionych
 ITEM#41116801e9e7bac17a4989be9f57e5240c77035327a173b3f386d212db27f288.gordion ITEM#c4e2d308bc321415ae602e51a74137cf249443a2ed3ca96e19fb9e8b20de8c0c.gordion ITEM#dfa360fb9a9288fc965e2e18a20e509054fc1bd507ac2d9fa2f36170b7d135b4.gordion ITEM#9ce42b6d2fce6e2277561e23725b6041721b4cabf98352f0af2ff2edba7b1cc2.gordion ITEM#2573eb26155deeb81c81434d58caa303f5b70376d04852f2eaf9221dece16973.gordion ITEM#0c7daafd7439616ad236a3174051649a47afdfb3595533f67f6c55d367b4893d.gordion
 
 
-ITEM#039001d7d726d415c2b5df03739087f04544d393858043ba3b43b94006d90611.gordion ITEM#ece9cee201ecd2d814830665fba258587e2aabd8f9ce971bd62ad98ec1722fd5.gordion ITEM#3a31bf40661061e9272a7803be54a17113159c4274b023ff6d09dc91cbb025aa.gordion ITEM#983874da741e743396bcebf3b7be31e4cb145a5a0628073c9a6b4952d708c122.gordion ITEM#df1f1b2c65e882d70fa89f79e0f1cf6a54078aae2995b877d199f8683df80e19.gordion ITEM#9913d1024fac23cd0ad49638d5aacac62ba9744fcfe1af9404288ccef933de92.gordion ITEM#91c141e9fb13454bf19602cea2d4dc6cc10e1c96e5f7b7a99522c45e59c2e1ab.gordion
+ITEM#039001d7d726d415c2b5df03739087f04544d393858043ba3b43b94006d90611.gordion ITEM#ece9cee201ecd2d814830665fba258587e2aabd8f9ce971bd62ad98ec1722fd5.gordion ITEM#3a31bf40661061e9272a7803be54a17113159c4274b023ff6d09dc91cbb025aa.gordion ITEM#983874da741e743396bcebf3b7be31e4cb145a5a0628073c9a6b4952d708c122.gordion ITEM#40436deb7e49f239a467f12c311dfc95840901d7590b73e22686086a5f4314e7.gordion ITEM#22cf8d0958e37f13a5ada96f810533b415f9cd0c9a5295977f1587c5f73e5fbf.gordion ITEM#df1f1b2c65e882d70fa89f79e0f1cf6a54078aae2995b877d199f8683df80e19.gordion ITEM#9913d1024fac23cd0ad49638d5aacac62ba9744fcfe1af9404288ccef933de92.gordion ITEM#91c141e9fb13454bf19602cea2d4dc6cc10e1c96e5f7b7a99522c45e59c2e1ab.gordion
 
 
-ITEM#d8f7a2fecbf831907a9ffe6babb44beb9a6a87757d202efd55a2e3784df70c05.gordion ITEM#740aad3d136cec9d59fab4382bd3432ce651b13832d7c2361eed43aaebe5fa59.gordion ITEM#14fb34ad47ea61d4b6874fc988321810d454e4362bac69e083e8f980e7005bea.gordion
+ITEM#d7117ee56793c5260cb712da1184353950ac30bb08c00ec11388e3e0c71d3bbe.gordion ITEM#d8f7a2fecbf831907a9ffe6babb44beb9a6a87757d202efd55a2e3784df70c05.gordion ITEM#740aad3d136cec9d59fab4382bd3432ce651b13832d7c2361eed43aaebe5fa59.gordion ITEM#14fb34ad47ea61d4b6874fc988321810d454e4362bac69e083e8f980e7005bea.gordion
+
+
+ITEM#211e1f5a1075a503eefcca5742b693e2bda3eb78efea6a3d785a0ba986b1511e.gordion
 
 
 ITEM#fa923366b67a0b7e62fabce939c1043dbb1a38824a777fd0f8a4d950ee33d397.gordion
@@ -81,7 +84,7 @@ ITEM#9ce42b6d2fce6e2277561e23725b6041721b4cabf98352f0af2ff2edba7b1cc2.gordion IT
 3. f(100) = round(0.01 ⋅ 1 ⋅ 3.36 ⋅ (100² + 137 ⋅ 100 + 910)) = round(0.0336 ⋅ 24 610) = 827
 
 Poniżej zaprezentowano wartości natywnej absorpcji fizycznej dla wszystkich wymienionych łączeń profesji.
-ITEM#9ce42b6d2fce6e2277561e23725b6041721b4cabf98352f0af2ff2edba7b1cc2.gordion ITEM#2573eb26155deeb81c81434d58caa303f5b70376d04852f2eaf9221dece16973.gordion ITEM#3a31bf40661061e9272a7803be54a17113159c4274b023ff6d09dc91cbb025aa.gordion ITEM#9913d1024fac23cd0ad49638d5aacac62ba9744fcfe1af9404288ccef933de92.gordion ITEM#740aad3d136cec9d59fab4382bd3432ce651b13832d7c2361eed43aaebe5fa59.gordion ITEM#fa923366b67a0b7e62fabce939c1043dbb1a38824a777fd0f8a4d950ee33d397.gordion[/cytat]
+ITEM#9ce42b6d2fce6e2277561e23725b6041721b4cabf98352f0af2ff2edba7b1cc2.gordion ITEM#2573eb26155deeb81c81434d58caa303f5b70376d04852f2eaf9221dece16973.gordion ITEM#3a31bf40661061e9272a7803be54a17113159c4274b023ff6d09dc91cbb025aa.gordion ITEM#983874da741e743396bcebf3b7be31e4cb145a5a0628073c9a6b4952d708c122.gordion ITEM#9913d1024fac23cd0ad49638d5aacac62ba9744fcfe1af9404288ccef933de92.gordion ITEM#740aad3d136cec9d59fab4382bd3432ce651b13832d7c2361eed43aaebe5fa59.gordion ITEM#fa923366b67a0b7e62fabce939c1043dbb1a38824a777fd0f8a4d950ee33d397.gordion[/cytat]
 [b]6.3 Absorpcja magiczna[/b]
 Występuje w:
 ​ ​ ​ • zbrojach,
@@ -109,7 +112,7 @@ ITEM#9ce42b6d2fce6e2277561e23725b6041721b4cabf98352f0af2ff2edba7b1cc2.gordion IT
 3. f(100) = round(0.01 ⋅ 1 ⋅ 1.68 ⋅ (100² + 137 ⋅ 100 + 910)) = round(0.0168 ⋅ 24 610) = 413
 
 Poniżej zaprezentowano wartości natywnej absorpcji magicznej dla wszystkich wymienionych łączeń profesji.
-ITEM#9ce42b6d2fce6e2277561e23725b6041721b4cabf98352f0af2ff2edba7b1cc2.gordion ITEM#2573eb26155deeb81c81434d58caa303f5b70376d04852f2eaf9221dece16973.gordion ITEM#3a31bf40661061e9272a7803be54a17113159c4274b023ff6d09dc91cbb025aa.gordion ITEM#9913d1024fac23cd0ad49638d5aacac62ba9744fcfe1af9404288ccef933de92.gordion ITEM#740aad3d136cec9d59fab4382bd3432ce651b13832d7c2361eed43aaebe5fa59.gordion ITEM#fa923366b67a0b7e62fabce939c1043dbb1a38824a777fd0f8a4d950ee33d397.gordion[/cytat]
+ITEM#9ce42b6d2fce6e2277561e23725b6041721b4cabf98352f0af2ff2edba7b1cc2.gordion ITEM#2573eb26155deeb81c81434d58caa303f5b70376d04852f2eaf9221dece16973.gordion ITEM#3a31bf40661061e9272a7803be54a17113159c4274b023ff6d09dc91cbb025aa.gordion ITEM#983874da741e743396bcebf3b7be31e4cb145a5a0628073c9a6b4952d708c122.gordion ITEM#9913d1024fac23cd0ad49638d5aacac62ba9744fcfe1af9404288ccef933de92.gordion ITEM#740aad3d136cec9d59fab4382bd3432ce651b13832d7c2361eed43aaebe5fa59.gordion ITEM#fa923366b67a0b7e62fabce939c1043dbb1a38824a777fd0f8a4d950ee33d397.gordion[/cytat]
 [b]6.4 Odporność magiczna[/b]
 Występuje w:
 ​ ​ ​ • zbrojach,
@@ -166,10 +169,13 @@ Poniżej zaprezentowano wartości natywnej odporności magicznej dla wszystkich 
 ITEM#41116801e9e7bac17a4989be9f57e5240c77035327a173b3f386d212db27f288.gordion ITEM#c4e2d308bc321415ae602e51a74137cf249443a2ed3ca96e19fb9e8b20de8c0c.gordion ITEM#dfa360fb9a9288fc965e2e18a20e509054fc1bd507ac2d9fa2f36170b7d135b4.gordion ITEM#9ce42b6d2fce6e2277561e23725b6041721b4cabf98352f0af2ff2edba7b1cc2.gordion ITEM#2573eb26155deeb81c81434d58caa303f5b70376d04852f2eaf9221dece16973.gordion ITEM#0c7daafd7439616ad236a3174051649a47afdfb3595533f67f6c55d367b4893d.gordion
 
 
-ITEM#039001d7d726d415c2b5df03739087f04544d393858043ba3b43b94006d90611.gordion ITEM#ece9cee201ecd2d814830665fba258587e2aabd8f9ce971bd62ad98ec1722fd5.gordion ITEM#3a31bf40661061e9272a7803be54a17113159c4274b023ff6d09dc91cbb025aa.gordion ITEM#983874da741e743396bcebf3b7be31e4cb145a5a0628073c9a6b4952d708c122.gordion ITEM#df1f1b2c65e882d70fa89f79e0f1cf6a54078aae2995b877d199f8683df80e19.gordion ITEM#9913d1024fac23cd0ad49638d5aacac62ba9744fcfe1af9404288ccef933de92.gordion ITEM#91c141e9fb13454bf19602cea2d4dc6cc10e1c96e5f7b7a99522c45e59c2e1ab.gordion
+ITEM#039001d7d726d415c2b5df03739087f04544d393858043ba3b43b94006d90611.gordion ITEM#ece9cee201ecd2d814830665fba258587e2aabd8f9ce971bd62ad98ec1722fd5.gordion ITEM#40436deb7e49f239a467f12c311dfc95840901d7590b73e22686086a5f4314e7.gordion ITEM#3a31bf40661061e9272a7803be54a17113159c4274b023ff6d09dc91cbb025aa.gordion ITEM#983874da741e743396bcebf3b7be31e4cb145a5a0628073c9a6b4952d708c122.gordion ITEM#22cf8d0958e37f13a5ada96f810533b415f9cd0c9a5295977f1587c5f73e5fbf.gordion ITEM#df1f1b2c65e882d70fa89f79e0f1cf6a54078aae2995b877d199f8683df80e19.gordion ITEM#9913d1024fac23cd0ad49638d5aacac62ba9744fcfe1af9404288ccef933de92.gordion ITEM#91c141e9fb13454bf19602cea2d4dc6cc10e1c96e5f7b7a99522c45e59c2e1ab.gordion
 
 
-ITEM#d8f7a2fecbf831907a9ffe6babb44beb9a6a87757d202efd55a2e3784df70c05.gordion ITEM#740aad3d136cec9d59fab4382bd3432ce651b13832d7c2361eed43aaebe5fa59.gordion ITEM#14fb34ad47ea61d4b6874fc988321810d454e4362bac69e083e8f980e7005bea.gordion
+ITEM#d7117ee56793c5260cb712da1184353950ac30bb08c00ec11388e3e0c71d3bbe.gordion ITEM#d8f7a2fecbf831907a9ffe6babb44beb9a6a87757d202efd55a2e3784df70c05.gordion ITEM#740aad3d136cec9d59fab4382bd3432ce651b13832d7c2361eed43aaebe5fa59.gordion ITEM#14fb34ad47ea61d4b6874fc988321810d454e4362bac69e083e8f980e7005bea.gordion
+
+
+ITEM#211e1f5a1075a503eefcca5742b693e2bda3eb78efea6a3d785a0ba986b1511e.gordion
 
 
 ITEM#fa923366b67a0b7e62fabce939c1043dbb1a38824a777fd0f8a4d950ee33d397.gordion[/cytat]
@@ -207,10 +213,13 @@ Poniżej zaprezentowano wartości natywnej odporności na truciznę dla wszystki
 ITEM#41116801e9e7bac17a4989be9f57e5240c77035327a173b3f386d212db27f288.gordion ITEM#c4e2d308bc321415ae602e51a74137cf249443a2ed3ca96e19fb9e8b20de8c0c.gordion ITEM#dfa360fb9a9288fc965e2e18a20e509054fc1bd507ac2d9fa2f36170b7d135b4.gordion ITEM#9ce42b6d2fce6e2277561e23725b6041721b4cabf98352f0af2ff2edba7b1cc2.gordion ITEM#2573eb26155deeb81c81434d58caa303f5b70376d04852f2eaf9221dece16973.gordion ITEM#0c7daafd7439616ad236a3174051649a47afdfb3595533f67f6c55d367b4893d.gordion
 
 
-ITEM#039001d7d726d415c2b5df03739087f04544d393858043ba3b43b94006d90611.gordion ITEM#ece9cee201ecd2d814830665fba258587e2aabd8f9ce971bd62ad98ec1722fd5.gordion ITEM#3a31bf40661061e9272a7803be54a17113159c4274b023ff6d09dc91cbb025aa.gordion ITEM#983874da741e743396bcebf3b7be31e4cb145a5a0628073c9a6b4952d708c122.gordion ITEM#df1f1b2c65e882d70fa89f79e0f1cf6a54078aae2995b877d199f8683df80e19.gordion ITEM#9913d1024fac23cd0ad49638d5aacac62ba9744fcfe1af9404288ccef933de92.gordion ITEM#91c141e9fb13454bf19602cea2d4dc6cc10e1c96e5f7b7a99522c45e59c2e1ab.gordion
+ITEM#039001d7d726d415c2b5df03739087f04544d393858043ba3b43b94006d90611.gordion ITEM#ece9cee201ecd2d814830665fba258587e2aabd8f9ce971bd62ad98ec1722fd5.gordion ITEM#40436deb7e49f239a467f12c311dfc95840901d7590b73e22686086a5f4314e7.gordion ITEM#3a31bf40661061e9272a7803be54a17113159c4274b023ff6d09dc91cbb025aa.gordion ITEM#983874da741e743396bcebf3b7be31e4cb145a5a0628073c9a6b4952d708c122.gordion ITEM#22cf8d0958e37f13a5ada96f810533b415f9cd0c9a5295977f1587c5f73e5fbf.gordion ITEM#df1f1b2c65e882d70fa89f79e0f1cf6a54078aae2995b877d199f8683df80e19.gordion ITEM#9913d1024fac23cd0ad49638d5aacac62ba9744fcfe1af9404288ccef933de92.gordion ITEM#91c141e9fb13454bf19602cea2d4dc6cc10e1c96e5f7b7a99522c45e59c2e1ab.gordion
 
 
-ITEM#d8f7a2fecbf831907a9ffe6babb44beb9a6a87757d202efd55a2e3784df70c05.gordion ITEM#740aad3d136cec9d59fab4382bd3432ce651b13832d7c2361eed43aaebe5fa59.gordion ITEM#14fb34ad47ea61d4b6874fc988321810d454e4362bac69e083e8f980e7005bea.gordion
+ITEM#d7117ee56793c5260cb712da1184353950ac30bb08c00ec11388e3e0c71d3bbe.gordion ITEM#d8f7a2fecbf831907a9ffe6babb44beb9a6a87757d202efd55a2e3784df70c05.gordion ITEM#740aad3d136cec9d59fab4382bd3432ce651b13832d7c2361eed43aaebe5fa59.gordion ITEM#14fb34ad47ea61d4b6874fc988321810d454e4362bac69e083e8f980e7005bea.gordion
+
+
+ITEM#211e1f5a1075a503eefcca5742b693e2bda3eb78efea6a3d785a0ba986b1511e.gordion
 
 
 ITEM#fa923366b67a0b7e62fabce939c1043dbb1a38824a777fd0f8a4d950ee33d397.gordion[/cytat]
@@ -221,7 +230,6 @@ f([i]x[/i]) = round(1 ⁄ 3 ⋅ [i]cx[/i]),
 gdzie [i]c[/i] zależy od wymaganych przez przedmiot profesji:
 ​ ​ ​ • m: 1,
 ​ ​ ​ • t: 0.5,
-​ ​ ​ • pm: 0.5,
 ​ ​ ​ • mt: 0.5,
 ​ ​ ​ • pmt: 0.5,
 ​ ​ ​ • pozostałe profesje: 0.
@@ -249,13 +257,15 @@ gdzie [i]c[/i] zależy od wymaganych przez przedmiot profesji:
 ​ ​ ​ • pozostałe profesje: 0.
 [cytat][b]Przykład[/b]
 Poniżej zaprezentowano wartość natywnego bonusu życia za siłę.
-ITEM#41116801e9e7bac17a4989be9f57e5240c77035327a173b3f386d212db27f288.gordion
+ITEM#41116801e9e7bac17a4989be9f57e5240c77035327a173b3f386d212db27f288.gordion ITEM#d7117ee56793c5260cb712da1184353950ac30bb08c00ec11388e3e0c71d3bbe.gordion
 
 
-f(100) = 0.01 ⋅ round(1 ⋅ 100) = 0.01 ⋅ 100 = 1
+1. f(100) = 0.1 ⋅ round(1 ⁄ 10 ⋅ 1 ⋅ 100) = 0.1 ⋅ 10 = 1
+2. f(100) = 0.1 ⋅ round(1 ⁄ 10 ⋅ 50 ⁄ 83 ⋅ 100) = 0.1 ⋅ 6 = 0.6
 
 Poniżej zaprezentowano wartości natywnego bonusu życia za siłę dla wszystkich wymienionych łączeń profesji.
-ITEM#41116801e9e7bac17a4989be9f57e5240c77035327a173b3f386d212db27f288.gordion ITEM#c4e2d308bc321415ae602e51a74137cf249443a2ed3ca96e19fb9e8b20de8c0c.gordion ITEM#039001d7d726d415c2b5df03739087f04544d393858043ba3b43b94006d90611.gordion[/cytat]
+ITEM#41116801e9e7bac17a4989be9f57e5240c77035327a173b3f386d212db27f288.gordion ITEM#c4e2d308bc321415ae602e51a74137cf249443a2ed3ca96e19fb9e8b20de8c0c.gordion ITEM#039001d7d726d415c2b5df03739087f04544d393858043ba3b43b94006d90611.gordion ITEM#ece9cee201ecd2d814830665fba258587e2aabd8f9ce971bd62ad98ec1722fd5.gordion ITEM#40436deb7e49f239a467f12c311dfc95840901d7590b73e22686086a5f4314e7.gordion ITEM#d7117ee56793c5260cb712da1184353950ac30bb08c00ec11388e3e0c71d3bbe.gordion
+[/cytat]
 [b]6.8 Unik[/b]
 Występuje w zbrojach.
 
@@ -268,10 +278,14 @@ gdzie [i]c[/i] zależy od wymaganych przez przedmiot profesji:
 ​ ​ ​ • pozostałe profesje: 0.
 [cytat][b]Przykład[/b]
 Poniżej zaprezentowano wartość natywnego uniku.
-ITEM#dfa360fb9a9288fc965e2e18a20e509054fc1bd507ac2d9fa2f36170b7d135b4.gordion
+ITEM#dfa360fb9a9288fc965e2e18a20e509054fc1bd507ac2d9fa2f36170b7d135b4.gordion ITEM#14fb34ad47ea61d4b6874fc988321810d454e4362bac69e083e8f980e7005bea.gordion
 
 
-f(100) = round(1 ⁄ 3 ⋅ 1 ⋅ 100) = 33[/cytat]
+1. f(100) = round(1 ⁄ 3 ⋅ 100) = 33
+2. f(100) = round(1 ⁄ 7 ⋅ 100) = 14
+
+Poniżej zaprezentowano wartości natywnego bonusu uniku dla wszystkich wymienionych łączeń profesji.
+ITEM#dfa360fb9a9288fc965e2e18a20e509054fc1bd507ac2d9fa2f36170b7d135b4.gordion ITEM#22cf8d0958e37f13a5ada96f810533b415f9cd0c9a5295977f1587c5f73e5fbf.gordion ITEM#df1f1b2c65e882d70fa89f79e0f1cf6a54078aae2995b877d199f8683df80e19.gordion ITEM#14fb34ad47ea61d4b6874fc988321810d454e4362bac69e083e8f980e7005bea.gordion[/cytat]
 [b]6.9 Szybkość ataku[/b]
 Występuje w zbrojach.
 
@@ -294,7 +308,7 @@ ITEM#2573eb26155deeb81c81434d58caa303f5b70376d04852f2eaf9221dece16973.gordion IT
 3. f(100) = 0.01 ⋅ round(1 ⁄ 3 ⋅ 100) = 0.33
 
 Poniżej zaprezentowano wartości natywnej szybkości ataku dla wszystkich wymienionych łączeń profesji.
-ITEM#2573eb26155deeb81c81434d58caa303f5b70376d04852f2eaf9221dece16973.gordion ITEM#0c7daafd7439616ad236a3174051649a47afdfb3595533f67f6c55d367b4893d.gordion ITEM#df1f1b2c65e882d70fa89f79e0f1cf6a54078aae2995b877d199f8683df80e19.gordion ITEM#91c141e9fb13454bf19602cea2d4dc6cc10e1c96e5f7b7a99522c45e59c2e1ab.gordion ITEM#14fb34ad47ea61d4b6874fc988321810d454e4362bac69e083e8f980e7005bea.gordion[/cytat]
+ITEM#2573eb26155deeb81c81434d58caa303f5b70376d04852f2eaf9221dece16973.gordion ITEM#0c7daafd7439616ad236a3174051649a47afdfb3595533f67f6c55d367b4893d.gordion ITEM#22cf8d0958e37f13a5ada96f810533b415f9cd0c9a5295977f1587c5f73e5fbf.gordion ITEM#df1f1b2c65e882d70fa89f79e0f1cf6a54078aae2995b877d199f8683df80e19.gordion ITEM#91c141e9fb13454bf19602cea2d4dc6cc10e1c96e5f7b7a99522c45e59c2e1ab.gordion ITEM#14fb34ad47ea61d4b6874fc988321810d454e4362bac69e083e8f980e7005bea.gordion[/cytat]
 [b]6.10 Blok[/b]
 Występuje w tarczach.
 
@@ -581,4 +595,10 @@ ITEM#09984c5009e1f721d9f956629af8204a0f05a303e950bd3b0714bfa1203d44c2.gordion IT
 ​ ​ ​ • Zmieniono błędne łączenie profesji „pm” na „pt” we współczynniku [i]c[/i] w natywnej absorpcji magicznej.
 ​ ​ ​ • Zmieniono błędną wartość współczynnika [i]c[/i] w natywnej odporności na truciznę dla łączenia profesji „wpb” z 6 na 3.
 ​ ​ ​ • Zaktualizowano link do tematu z błędami zaokrągleń.
+01.03.2024:
+​ ​ ​ • Zmieniono wzór na przeklęty bonus obniżania siły ciosu krytycznego na jego krótszą formę: ⌊0.02([i]x[/i] − 1)⌋ − ⌊0.005([i]x[/i] + 149)⌋ + 5 → round(0.75 ⋅ (⌈0.02[i]x[/i]⌉ + 5)).
+​ ​ ​ • Usunięto błędny współczynnik [i]c[/i] w natywnej manie:
+​ ​ ​ ​ ​ ​ ◦ pm: 0.5 → 0.
+​ ​ ​ • Zaktualizowano przedmioty prezentujące wartości natywnych bonusów.
+​ ​ ​ • Poprawiono nieaktualne przykłady prezentujące wartości natywnych bonusów.
 [b][/b]

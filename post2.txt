@@ -381,14 +381,14 @@ ITEM#3394a8a83e9eb08c9c0bc964c0e9434cff61d6bacde64b00c1cce201fbaa72c7.gordion IT
 1. f(100) = round(0.0003 ⋅ (100² + 130 ⋅ 100) + 1) = round(0.0003 ⋅ 23 000 + 1) = 8
 2. f(300) = round(0.0003 ⋅ (300² + 130 ⋅ 300) + 1) = round(0.0003 ⋅ 129 000 + 1) = 40[/cytat]
 [b]5.2 Obniżanie siły ciosu krytycznego[/b]
-f([i]x[/i]) = ⌊0.02([i]x[/i] − 1)⌋ − ⌊0.005([i]x[/i] + 149)⌋ + 5
+f([i]x[/i]) = round(0.75 ⋅ (⌈0.02[i]x[/i]⌉ + 5))
 [cytat][b]Przykład[/b]
 Poniżej zaprezentowano wartości statystyki „obniżanie siły ciosu krytycznego” w zależności od różnego poziomu przedmiotu.
 ITEM#77f338f2c6302654c1f1819b6a69f582b90b9e43932e34d86eeb699f777c74fd.gordion ITEM#f5d212366cc0846d910c5c0cfd115e26d8b2d40e6df57d516ab97bdc21bc1af7.gordion
 
 
-1. f(100) = ⌊0.02 ⋅ 99⌋ − ⌊0.005 ⋅ 249⌋ + 5 = 1 − 1 + 5 = 5
-2. f(300) = ⌊0.02 ⋅ 299⌋ − ⌊0.005 ⋅ 449⌋ + 5 = 5 − 2 + 5 = 8[/cytat]
+1. f(100) = round(0.75 ⋅ (⌈0.02 ⋅ 100⌉ + 5)) = round(0.75 ⋅ 7) = 5
+2. f(300) = round(0.75 ⋅ (⌈0.02 ⋅ 300⌉ + 5)) = round(0.75 ⋅ 11) = 8[/cytat]
 [b]5.3 Obniżanie niszczenia zasobów[/b]
 Obniżanie niszczenia many: f([i]x[/i]) = round(0.03[i]x[/i] + 3.75).
 Obniżanie niszczenia energii: g([i]x[/i]) = round(0.444 ⋅ f([i]x[/i])).

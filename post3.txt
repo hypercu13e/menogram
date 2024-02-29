@@ -1,0 +1,584 @@
+[b]6 Bonusy natywne[/b]
+[b]6.1 Pancerz[/b]
+Występuje w:
+​ ​ ​ • zbrojach,
+​ ​ ​ • tarczach,
+​ ​ ​ • hełmach,
+​ ​ ​ • rękawicach,
+​ ​ ​ • butach.
+
+f([i]x[/i]) = round(0.02[i]pc[/i] ⋅ R([i]x[/i])),
+gdzie [i]c[/i] zależy od wymaganych przez przedmiot profesji:
+​ ​ ​ • w: 1.08,
+​ ​ ​ • p: 1,
+​ ​ ​ • b: 0.9,
+​ ​ ​ • m: 0.5,
+​ ​ ​ • t: 0.7,
+​ ​ ​ • h: 0.8,
+​ ​ ​ • wp: 1.04,
+​ ​ ​ • wb: 0.99,
+​ ​ ​ • pm: 0.75,
+​ ​ ​ • pt: 0.92,
+​ ​ ​ • pb: 0.95,
+​ ​ ​ • bt: 0.8,
+​ ​ ​ • bh: 0.85,
+​ ​ ​ • mt: 0.6,
+​ ​ ​ • th: 0.75,
+​ ​ ​ • wpb: 0.96,
+​ ​ ​ • wbh: 0.93,
+​ ​ ​ • pmt: 0.75,
+​ ​ ​ • bth: 0.8,
+​ ​ ​ • wpbh: 0.96,
+​ ​ ​ • wpbmth: 0.9,
+​ ​ ​ • pozostałe łączenia: 1.
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości natywnego pancerza w zależności od różnego łączenia profesji.
+ITEM#41116801e9e7bac17a4989be9f57e5240c77035327a173b3f386d212db27f288.gordion ITEM#039001d7d726d415c2b5df03739087f04544d393858043ba3b43b94006d90611.gordion ITEM#fa923366b67a0b7e62fabce939c1043dbb1a38824a777fd0f8a4d950ee33d397.gordion
+
+
+1. f(100) = round(0.02 ⋅ 1 ⋅ 1.08 ⋅ (100² + 137 ⋅ 100 + 910)) = round(0.0216 ⋅ 24 610) = 532
+2. f(100) = round(0.02 ⋅ 1 ⋅ 1.04 ⋅ (100² + 137 ⋅ 100 + 910)) = round(0.0208 ⋅ 24 610) = 512
+3. f(100) = round(0.02 ⋅ 1 ⋅ 0.9 ⋅ (100² + 137 ⋅ 100 + 910)) = round(0.018 ⋅ 24 610) = 443
+
+Poniżej zaprezentowano wartości natywnego pancerza dla wszystkich wymienionych łączeń profesji.
+ITEM#41116801e9e7bac17a4989be9f57e5240c77035327a173b3f386d212db27f288.gordion ITEM#c4e2d308bc321415ae602e51a74137cf249443a2ed3ca96e19fb9e8b20de8c0c.gordion ITEM#dfa360fb9a9288fc965e2e18a20e509054fc1bd507ac2d9fa2f36170b7d135b4.gordion ITEM#9ce42b6d2fce6e2277561e23725b6041721b4cabf98352f0af2ff2edba7b1cc2.gordion ITEM#2573eb26155deeb81c81434d58caa303f5b70376d04852f2eaf9221dece16973.gordion ITEM#0c7daafd7439616ad236a3174051649a47afdfb3595533f67f6c55d367b4893d.gordion
+
+
+ITEM#039001d7d726d415c2b5df03739087f04544d393858043ba3b43b94006d90611.gordion ITEM#ece9cee201ecd2d814830665fba258587e2aabd8f9ce971bd62ad98ec1722fd5.gordion ITEM#3a31bf40661061e9272a7803be54a17113159c4274b023ff6d09dc91cbb025aa.gordion ITEM#983874da741e743396bcebf3b7be31e4cb145a5a0628073c9a6b4952d708c122.gordion ITEM#df1f1b2c65e882d70fa89f79e0f1cf6a54078aae2995b877d199f8683df80e19.gordion ITEM#9913d1024fac23cd0ad49638d5aacac62ba9744fcfe1af9404288ccef933de92.gordion ITEM#91c141e9fb13454bf19602cea2d4dc6cc10e1c96e5f7b7a99522c45e59c2e1ab.gordion
+
+
+ITEM#d8f7a2fecbf831907a9ffe6babb44beb9a6a87757d202efd55a2e3784df70c05.gordion ITEM#740aad3d136cec9d59fab4382bd3432ce651b13832d7c2361eed43aaebe5fa59.gordion ITEM#14fb34ad47ea61d4b6874fc988321810d454e4362bac69e083e8f980e7005bea.gordion
+
+
+ITEM#fa923366b67a0b7e62fabce939c1043dbb1a38824a777fd0f8a4d950ee33d397.gordion
+
+
+ITEM#ab6a58d528b5fe00920d16d46e5668621ce4d0f9ea483661d77ec1acb26ce533.gordion[/cytat]
+[b]6.2 Absorpcja fizyczna[/b]
+Występuje w:
+​ ​ ​ • zbrojach,
+​ ​ ​ • tarczach,
+​ ​ ​ • hełmach,
+​ ​ ​ • rękawicach,
+​ ​ ​ • butach.
+
+f([i]x[/i]) = round(0.01[i]pc[/i] ⋅ R([i]x[/i])),
+gdzie [i]c[/i] zależy od wymaganych przez przedmiot profesji:
+​ ​ ​ • m: 6,
+​ ​ ​ • t: 4,
+​ ​ ​ • pm: 3,
+​ ​ ​ • pt: 1.2,
+​ ​ ​ • mt: 5,
+​ ​ ​ • ​pmt: 3.36,
+​ ​ ​ • pozostałe łączenia: 0.
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości natywnej absorpcji fizycznej w zależności od różnego łączenia profesji.
+ITEM#9ce42b6d2fce6e2277561e23725b6041721b4cabf98352f0af2ff2edba7b1cc2.gordion ITEM#9913d1024fac23cd0ad49638d5aacac62ba9744fcfe1af9404288ccef933de92.gordion ITEM#740aad3d136cec9d59fab4382bd3432ce651b13832d7c2361eed43aaebe5fa59.gordion
+
+
+1. f(100) = round(0.01 ⋅ 1 ⋅ 6 ⋅ (100² + 137 ⋅ 100 + 910)) = round(0.06 ⋅ 24 610) = 1477
+2. f(100) = round(0.01 ⋅ 1 ⋅ 5 ⋅ (100² + 137 ⋅ 100 + 910)) = round(0.05 ⋅ 24 610) = 1231
+3. f(100) = round(0.01 ⋅ 1 ⋅ 3.36 ⋅ (100² + 137 ⋅ 100 + 910)) = round(0.0336 ⋅ 24 610) = 827
+
+Poniżej zaprezentowano wartości natywnej absorpcji fizycznej dla wszystkich wymienionych łączeń profesji.
+ITEM#9ce42b6d2fce6e2277561e23725b6041721b4cabf98352f0af2ff2edba7b1cc2.gordion ITEM#2573eb26155deeb81c81434d58caa303f5b70376d04852f2eaf9221dece16973.gordion ITEM#3a31bf40661061e9272a7803be54a17113159c4274b023ff6d09dc91cbb025aa.gordion ITEM#9913d1024fac23cd0ad49638d5aacac62ba9744fcfe1af9404288ccef933de92.gordion ITEM#740aad3d136cec9d59fab4382bd3432ce651b13832d7c2361eed43aaebe5fa59.gordion ITEM#fa923366b67a0b7e62fabce939c1043dbb1a38824a777fd0f8a4d950ee33d397.gordion[/cytat]
+[b]6.3 Absorpcja magiczna[/b]
+Występuje w:
+​ ​ ​ • zbrojach,
+​ ​ ​ • tarczach,
+​ ​ ​ • hełmach,
+​ ​ ​ • rękawicach,
+​ ​ ​ • butach.
+
+f([i]x[/i]) = round(0.01[i]pc[/i] ⋅ R([i]x[/i])),
+gdzie [i]c[/i] zależy od wymaganych przez przedmiot profesji:
+​ ​ ​ • m: 3,
+​ ​ ​ • t: 2,
+​ ​ ​ • pm: 1.5,
+​ ​ ​ • pt: 0.6,
+​ ​ ​ • mt: 2.5,
+​ ​ ​ • ​pmt: 1.68,
+​ ​ ​ • pozostałe łączenia: 0.
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości natywnej absorpcji magicznej w zależności od różnego łączenia profesji.
+ITEM#9ce42b6d2fce6e2277561e23725b6041721b4cabf98352f0af2ff2edba7b1cc2.gordion ITEM#9913d1024fac23cd0ad49638d5aacac62ba9744fcfe1af9404288ccef933de92.gordion ITEM#740aad3d136cec9d59fab4382bd3432ce651b13832d7c2361eed43aaebe5fa59.gordion
+
+
+1. f(100) = round(0.01 ⋅ 1 ⋅ 3 ⋅ (100² + 137 ⋅ 100 + 910)) = round(0.03 ⋅ 24 610) = 738
+2. f(100) = round(0.01 ⋅ 1 ⋅ 2.5 ⋅ (100² + 137 ⋅ 100 + 910)) = round(0.025 ⋅ 24 610) = 615
+3. f(100) = round(0.01 ⋅ 1 ⋅ 1.68 ⋅ (100² + 137 ⋅ 100 + 910)) = round(0.0168 ⋅ 24 610) = 413
+
+Poniżej zaprezentowano wartości natywnej absorpcji magicznej dla wszystkich wymienionych łączeń profesji.
+ITEM#9ce42b6d2fce6e2277561e23725b6041721b4cabf98352f0af2ff2edba7b1cc2.gordion ITEM#2573eb26155deeb81c81434d58caa303f5b70376d04852f2eaf9221dece16973.gordion ITEM#3a31bf40661061e9272a7803be54a17113159c4274b023ff6d09dc91cbb025aa.gordion ITEM#9913d1024fac23cd0ad49638d5aacac62ba9744fcfe1af9404288ccef933de92.gordion ITEM#740aad3d136cec9d59fab4382bd3432ce651b13832d7c2361eed43aaebe5fa59.gordion ITEM#fa923366b67a0b7e62fabce939c1043dbb1a38824a777fd0f8a4d950ee33d397.gordion[/cytat]
+[b]6.4 Odporność magiczna[/b]
+Występuje w:
+​ ​ ​ • zbrojach,
+​ ​ ​ • tarczach,
+​ ​ ​ • hełmach,
+​ ​ ​ • rękawicach,
+​ ​ ​ • butach.
+
+Rodzaj natywnej odporności magicznej zależy od parametru [i]c[/i] = mod([i]l[/i], 3):
+​ ​ ​ • Odporność na ogień, jeśli [i]c[/i] = 0.
+​ ​ ​ • Odporność na zimno, jeśli [i]c[/i] = 1.
+​ ​ ​ • Odporność na błyskawice, jeśli [i]c[/i] = 2.
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano typ natywnej odporności magicznej w zależności od różnego poziomu przedmiotu.
+ITEM#5542e662ddc52c6d873900e2179beff8f29c7963f82fc6e4211b9a124be66e07.gordion ITEM#a55e6db821ab85799c0dcd4adcde4dce7e20cd27bc2d836cb0d38197a0bb08ec.gordion ITEM#752503981d909519025495ec0d01bb2d91e49263bb5c883d34310fc92b9a19eb.gordion
+
+
+1. mod(99, 3) = 0 ⇒ odporność na ogień
+2. mod(100, 3) = 1 ⇒ odporność na zimno
+3. mod(101, 3) = 2 ⇒ odporność na błyskawice[/cytat]
+Wartość odporności wynosi [i]mr[/i] + [i]c[/i], gdzie [i]m[/i] i [i]c[/i] zależą od wymaganych przez przedmiot profesji:
+​ ​ ​ • w: 0 i 0,
+​ ​ ​ • p: 1 i 6,
+​ ​ ​ • b: 1 i 2,
+​ ​ ​ • m: 2 i 10,
+​ ​ ​ • t: 2 i 8,
+​ ​ ​ • h: 1 i 4,
+​ ​ ​ • wp: 1 i 3,
+​ ​ ​ • wb: 1 i 1,
+​ ​ ​ • pb: 1 i 4,
+​ ​ ​ • pm: 2 i 8,
+​ ​ ​ • pt: 1 i 7,
+​ ​ ​ • bt: 1 i 5,
+​ ​ ​ • bh: 1 i 3,
+​ ​ ​ • mt: 2 i 9,
+​ ​ ​ • th: 1 i 6,
+​ ​ ​ • wpb: 1 i 2,
+​ ​ ​ • wbh: 1 i 2,
+​ ​ ​ • pmt: 2 i 8,
+​ ​ ​ • bth: 1 i 5,
+​ ​ ​ • wpbh: 1 i 3,
+​ ​ ​ • pozostałe łączenia: 0 i 0.
+Parametr [i]r[/i] zdefiniowany jest identycznie jak w przypadku funkcji R([i]x[/i]).
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości natywnej odporności magicznej w zależności od różnego łączenia profesji.
+ITEM#9ce42b6d2fce6e2277561e23725b6041721b4cabf98352f0af2ff2edba7b1cc2.gordion ITEM#039001d7d726d415c2b5df03739087f04544d393858043ba3b43b94006d90611.gordion ITEM#14fb34ad47ea61d4b6874fc988321810d454e4362bac69e083e8f980e7005bea.gordion
+
+
+1. 2 ⋅ 2 + 10 = 14
+2. 1 ⋅ 2 + 3 = 5
+3. 1 ⋅ 2 + 5 = 7
+
+Poniżej zaprezentowano wartości natywnej odporności magicznej dla wszystkich wymienionych łączeń profesji.
+ITEM#41116801e9e7bac17a4989be9f57e5240c77035327a173b3f386d212db27f288.gordion ITEM#c4e2d308bc321415ae602e51a74137cf249443a2ed3ca96e19fb9e8b20de8c0c.gordion ITEM#dfa360fb9a9288fc965e2e18a20e509054fc1bd507ac2d9fa2f36170b7d135b4.gordion ITEM#9ce42b6d2fce6e2277561e23725b6041721b4cabf98352f0af2ff2edba7b1cc2.gordion ITEM#2573eb26155deeb81c81434d58caa303f5b70376d04852f2eaf9221dece16973.gordion ITEM#0c7daafd7439616ad236a3174051649a47afdfb3595533f67f6c55d367b4893d.gordion
+
+
+ITEM#039001d7d726d415c2b5df03739087f04544d393858043ba3b43b94006d90611.gordion ITEM#ece9cee201ecd2d814830665fba258587e2aabd8f9ce971bd62ad98ec1722fd5.gordion ITEM#3a31bf40661061e9272a7803be54a17113159c4274b023ff6d09dc91cbb025aa.gordion ITEM#983874da741e743396bcebf3b7be31e4cb145a5a0628073c9a6b4952d708c122.gordion ITEM#df1f1b2c65e882d70fa89f79e0f1cf6a54078aae2995b877d199f8683df80e19.gordion ITEM#9913d1024fac23cd0ad49638d5aacac62ba9744fcfe1af9404288ccef933de92.gordion ITEM#91c141e9fb13454bf19602cea2d4dc6cc10e1c96e5f7b7a99522c45e59c2e1ab.gordion
+
+
+ITEM#d8f7a2fecbf831907a9ffe6babb44beb9a6a87757d202efd55a2e3784df70c05.gordion ITEM#740aad3d136cec9d59fab4382bd3432ce651b13832d7c2361eed43aaebe5fa59.gordion ITEM#14fb34ad47ea61d4b6874fc988321810d454e4362bac69e083e8f980e7005bea.gordion
+
+
+ITEM#fa923366b67a0b7e62fabce939c1043dbb1a38824a777fd0f8a4d950ee33d397.gordion[/cytat]
+[b]6.5 Odporność na truciznę[/b]
+Występuje w:
+​ ​ ​ • zbrojach,
+​ ​ ​ • hełmach,
+​ ​ ​ • rękawicach,
+​ ​ ​ • butach.
+
+Wartość odporności wynosi [i]c[/i], gdzie [i]c[/i] zależy od wymaganych przez przedmiot profesji:
+​ ​ ​ • w: 1,
+​ ​ ​ • p: 0,
+​ ​ ​ • b: 8,
+​ ​ ​ • m: 0,
+​ ​ ​ • t: 12,
+​ ​ ​ • h: 16,
+​ ​ ​ • wp: 1,
+​ ​ ​ • wb: 5,
+​ ​ ​ • pb: 4,
+​ ​ ​ • pm: 0,
+​ ​ ​ • pt: 6,
+​ ​ ​ • bt: 10,
+​ ​ ​ • bh: 12,
+​ ​ ​ • mt: 6,
+​ ​ ​ • th: 14,
+​ ​ ​ • wpb: 3,
+​ ​ ​ • wbh: 8,
+​ ​ ​ • pmt: 4,
+​ ​ ​ • bth: 12,
+​ ​ ​ • wpbh: 6,
+​ ​ ​ • pozostałe łączenia: 0.
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości natywnej odporności na truciznę dla wszystkich wymienionych łączeń profesji.
+ITEM#41116801e9e7bac17a4989be9f57e5240c77035327a173b3f386d212db27f288.gordion ITEM#c4e2d308bc321415ae602e51a74137cf249443a2ed3ca96e19fb9e8b20de8c0c.gordion ITEM#dfa360fb9a9288fc965e2e18a20e509054fc1bd507ac2d9fa2f36170b7d135b4.gordion ITEM#9ce42b6d2fce6e2277561e23725b6041721b4cabf98352f0af2ff2edba7b1cc2.gordion ITEM#2573eb26155deeb81c81434d58caa303f5b70376d04852f2eaf9221dece16973.gordion ITEM#0c7daafd7439616ad236a3174051649a47afdfb3595533f67f6c55d367b4893d.gordion
+
+
+ITEM#039001d7d726d415c2b5df03739087f04544d393858043ba3b43b94006d90611.gordion ITEM#ece9cee201ecd2d814830665fba258587e2aabd8f9ce971bd62ad98ec1722fd5.gordion ITEM#3a31bf40661061e9272a7803be54a17113159c4274b023ff6d09dc91cbb025aa.gordion ITEM#983874da741e743396bcebf3b7be31e4cb145a5a0628073c9a6b4952d708c122.gordion ITEM#df1f1b2c65e882d70fa89f79e0f1cf6a54078aae2995b877d199f8683df80e19.gordion ITEM#9913d1024fac23cd0ad49638d5aacac62ba9744fcfe1af9404288ccef933de92.gordion ITEM#91c141e9fb13454bf19602cea2d4dc6cc10e1c96e5f7b7a99522c45e59c2e1ab.gordion
+
+
+ITEM#d8f7a2fecbf831907a9ffe6babb44beb9a6a87757d202efd55a2e3784df70c05.gordion ITEM#740aad3d136cec9d59fab4382bd3432ce651b13832d7c2361eed43aaebe5fa59.gordion ITEM#14fb34ad47ea61d4b6874fc988321810d454e4362bac69e083e8f980e7005bea.gordion
+
+
+ITEM#fa923366b67a0b7e62fabce939c1043dbb1a38824a777fd0f8a4d950ee33d397.gordion[/cytat]
+[b]6.6 Mana[/b]
+Występuje w zbrojach, które spełniają warunek [i]l[/i] > 20.
+
+f([i]x[/i]) = round(1 ⁄ 3 ⋅ [i]cx[/i]),
+gdzie [i]c[/i] zależy od wymaganych przez przedmiot profesji:
+​ ​ ​ • m: 1,
+​ ​ ​ • t: 0.5,
+​ ​ ​ • pm: 0.5,
+​ ​ ​ • mt: 0.5,
+​ ​ ​ • pmt: 0.5,
+​ ​ ​ • pozostałe profesje: 0.
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości natywnej many w zależności od różnego wymagania profesji.
+ITEM#9ce42b6d2fce6e2277561e23725b6041721b4cabf98352f0af2ff2edba7b1cc2.gordion ITEM#9913d1024fac23cd0ad49638d5aacac62ba9744fcfe1af9404288ccef933de92.gordion
+
+
+1. f(100) = round(1 ⁄ 3 ⋅ 1 ⋅ 100) = 33
+2. f(100) = round(1 ⁄ 3 ⋅ 0.5 ⋅ 100) = 17
+
+Poniżej zaprezentowano wartości natywnej many dla wszystkich wymienionych łączeń profesji.
+ITEM#9ce42b6d2fce6e2277561e23725b6041721b4cabf98352f0af2ff2edba7b1cc2.gordion ITEM#2573eb26155deeb81c81434d58caa303f5b70376d04852f2eaf9221dece16973.gordion ITEM#9913d1024fac23cd0ad49638d5aacac62ba9744fcfe1af9404288ccef933de92.gordion ITEM#740aad3d136cec9d59fab4382bd3432ce651b13832d7c2361eed43aaebe5fa59.gordion[/cytat]
+[b]6.7 Bonus życia za siłę[/b]
+Występuje w zbrojach.
+
+f([i]x[/i]) = 0.1 ⋅ round(1 ⁄ 10 ⋅ [i]cx[/i]),
+gdzie [i]c[/i] zależy od wymaganych przez przedmiot profesji:
+​ ​ ​ • w: 1,
+​ ​ ​ • p: 1,
+​ ​ ​ • wp: 1,
+​ ​ ​ • wb: 1 ⁄ 2,
+​ ​ ​ • pb: 1 ⁄ 2,
+​ ​ ​ • wpb: 1 ⁄ 1.66 = 50 ⁄ 83,
+​ ​ ​ • pozostałe profesje: 0.
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartość natywnego bonusu życia za siłę.
+ITEM#41116801e9e7bac17a4989be9f57e5240c77035327a173b3f386d212db27f288.gordion
+
+
+f(100) = 0.01 ⋅ round(1 ⋅ 100) = 0.01 ⋅ 100 = 1
+
+Poniżej zaprezentowano wartości natywnego bonusu życia za siłę dla wszystkich wymienionych łączeń profesji.
+ITEM#41116801e9e7bac17a4989be9f57e5240c77035327a173b3f386d212db27f288.gordion ITEM#c4e2d308bc321415ae602e51a74137cf249443a2ed3ca96e19fb9e8b20de8c0c.gordion ITEM#039001d7d726d415c2b5df03739087f04544d393858043ba3b43b94006d90611.gordion[/cytat]
+[b]6.8 Unik[/b]
+Występuje w zbrojach.
+
+f([i]x[/i]) = round([i]cx[/i]),
+gdzie [i]c[/i] zależy od wymaganych przez przedmiot profesji:
+​ ​ ​ • b: 1 ⁄ 3,
+​ ​ ​ • bt: 1 ⁄ 6,
+​ ​ ​ • bh: 1 ⁄ 6,
+​ ​ ​ • bth: 1 ⁄ 7,
+​ ​ ​ • pozostałe profesje: 0.
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartość natywnego uniku.
+ITEM#dfa360fb9a9288fc965e2e18a20e509054fc1bd507ac2d9fa2f36170b7d135b4.gordion
+
+
+f(100) = round(1 ⁄ 3 ⋅ 1 ⋅ 100) = 33[/cytat]
+[b]6.9 Szybkość ataku[/b]
+Występuje w zbrojach.
+
+f([i]x[/i]) = 0.01 ⋅ round([i]cx[/i]),
+gdzie [i]c[/i] zależy od wymaganych przez przedmiot profesji:
+​ ​ ​ • t: 0.25,
+​ ​ ​ • h: 0.5,
+​ ​ ​ • bt: 1 ⁄ 5.5 = 2 ⁄ 11,
+​ ​ ​ • bh: 0.25,
+​ ​ ​ • th: 1 ⁄ 3,
+​ ​ ​ • bth: 0.25,
+​ ​ ​ • pozostałe profesje: 0.
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości natywnej szybkości ataku w zależności od różnego wymagania profesji.
+ITEM#2573eb26155deeb81c81434d58caa303f5b70376d04852f2eaf9221dece16973.gordion ITEM#0c7daafd7439616ad236a3174051649a47afdfb3595533f67f6c55d367b4893d.gordion ITEM#91c141e9fb13454bf19602cea2d4dc6cc10e1c96e5f7b7a99522c45e59c2e1ab.gordion
+
+
+1. f(100) = 0.01 ⋅ round(0.25 ⋅ 100) = 0.25
+2. f(100) = 0.01 ⋅ round(0.5 ⋅ 100) = 0.5
+3. f(100) = 0.01 ⋅ round(1 ⁄ 3 ⋅ 100) = 0.33
+
+Poniżej zaprezentowano wartości natywnej szybkości ataku dla wszystkich wymienionych łączeń profesji.
+ITEM#2573eb26155deeb81c81434d58caa303f5b70376d04852f2eaf9221dece16973.gordion ITEM#0c7daafd7439616ad236a3174051649a47afdfb3595533f67f6c55d367b4893d.gordion ITEM#df1f1b2c65e882d70fa89f79e0f1cf6a54078aae2995b877d199f8683df80e19.gordion ITEM#91c141e9fb13454bf19602cea2d4dc6cc10e1c96e5f7b7a99522c45e59c2e1ab.gordion ITEM#14fb34ad47ea61d4b6874fc988321810d454e4362bac69e083e8f980e7005bea.gordion[/cytat]
+[b]6.10 Blok[/b]
+Występuje w tarczach.
+
+f([i]x[/i]) = round([i]cx[/i]),
+gdzie [i]c[/i] zależy od wymaganych przez przedmiot profesji:
+​ ​ ​ • w: 1,
+​ ​ ​ • p: 1.2,
+​ ​ ​ • wp: 1.1,
+​ ​ ​ • pozostałe profesje: 1.
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości natywnego bloku w zależności od różnego wymagania profesji.
+ITEM#6f3747bd4f1460594ad3294b5dbba270fa64b8d3036a9f5d30ddf3bd3f8eb453.gordion ITEM#7ebf5e47bf2ae821212416c60df98123646bf2381649f376492138a04afe66c0.gordion ITEM#94635c64419ccdd833695434808c9cb7995698ccb1702f5d2308bad3e4ca5c10.gordion
+
+
+1. f(100) = round(1 ⋅ 100) = 100
+2. f(100) = round(1.2 ⋅ 100) = 120
+3. f(100) = round(1.1 ⋅ 100) = 110[/cytat]
+[b]6.11 Obrażenia fizyczne[/b]
+Występują w:
+​ ​ ​ • broniach jednoręcznych,
+​ ​ ​ • broniach półtoraręcznych,
+​ ​ ​ • broniach dwuręcznych,
+​ ​ ​ • broniach dystansowych,
+​ ​ ​ • broniach pomocniczych.
+
+Wartość minimalna obrażeń: f([i]x[/i]) = round(0.9 ⋅ 0.051[i]c[/i] ⋅ R([i]x[/i])).
+Wartość maksymalna obrażeń: g([i]x[/i]) = round(1.1 ⋅ 0.051[i]c[/i] ⋅ R([i]x[/i])).
+[i]c[/i] wynosi:
+​ ​ ​ • 1.06 dla broni jednoręcznych,
+​ ​ ​ • 0.9 dla broni jednoręcznych z obrażeniami magicznymi,
+​ ​ ​ • 0.83 dla broni jednoręcznych z trucizną lub głęboką raną,
+​ ​ ​ • 1.25 dla broni półtoraręcznych,
+​ ​ ​ • 1.26 dla broni półtoraręcznych z obrażeniami magicznymi,
+​ ​ ​ • 1.025 dla broni półtoraręcznych z trucizną lub głęboką raną,
+​ ​ ​ • 1.75 dla broni dwuręcznych,
+​ ​ ​ • 1.53 dla broni dwuręcznych z obrażeniami magicznymi,
+​ ​ ​ • 1.445 dla broni dwuręcznych z trucizną lub głęboką raną,
+​ ​ ​ • 1.35 dla broni dystansowych,
+​ ​ ​ • 0.7 dla broni dystansowych z obrażeniami magicznymi,
+​ ​ ​ • 0.91 dla broni dystansowych z trucizną lub głęboką raną,
+​ ​ ​ • 0.755 dla broni pomocniczych,
+​ ​ ​ • 0.595 dla broni pomocniczych z trucizną lub głęboką raną,
+​ ​ ​ • 0 dla pozostałych przedmiotów.
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości natywnych obrażeń fizycznych w zależności od różnego typu przedmiotu oraz różnego dodatkowego typu obrażeń.
+ITEM#442f75fba08bf26d54933e91e1db2a98c922da771579205f9a1ada5cf402c796.gordion ITEM#6d7d7056c2de3befa3e3974c10dc957938d251f37ef492257eb6cd3ffabfcf18.gordion ITEM#176b66007d357c7016059ba571fb71f8c3085dd9690269bfc64753769bc35d94.gordion
+
+
+1. f(100) = round(0.9 ⋅ 0.051 ⋅ 1.06 ⋅ (100² + 130 ⋅ 100)) = round(0.048654 ⋅ 23 000) = 1119
+​ ​ ​ ​ g(100) = round(1.1 ⋅ 0.051 ⋅ 1.06 ⋅ (100² + 130 ⋅ 100)) = round(0.059466 ⋅ 23 000) = 1368
+2. f(100) = round(0.9 ⋅ 0.051 ⋅ 1.025 ⋅ (100² + 130 ⋅ 100)) = round(0.0470475 ⋅ 23 000) = 1082
+​ ​ ​ ​ g(100) = round(1.1 ⋅ 0.051 ⋅ 1.025 ⋅ (100² + 130 ⋅ 100)) = round(0.0575025 ⋅ 23 000) = 1323
+3. f(100) = round(0.9 ⋅ 0.051 ⋅ 0.7 ⋅ (100² + 130 ⋅ 100)) = round(0.03213 ⋅ 23 000) = 739
+​ ​ ​ ​ g(100) = round(1.1 ⋅ 0.051 ⋅ 0.7 ⋅ (100² + 130 ⋅ 100)) = round(0.03927 ⋅ 23 000) = 903
+
+Poniżej zaprezentowano wartości natywnych obrażeń fizycznych dla wszystkich wymienionych kombinacji.
+ITEM#442f75fba08bf26d54933e91e1db2a98c922da771579205f9a1ada5cf402c796.gordion ITEM#09984c5009e1f721d9f956629af8204a0f05a303e950bd3b0714bfa1203d44c2.gordion ITEM#9a5d7f49c149ab1ad58eb5ceead475dce7bcbff75312967418b00b7492e935d4.gordion ITEM#2c4e3e8d792b70780dac0d05c2d8ed3b9a50df3eebbc7eaee3c1123db069fbb4.gordion ITEM#bf0cd3b96d4cfdae095d262dfa38d2e9250607bff5fb831c317f5c0242abd0f5.gordion ITEM#6d7d7056c2de3befa3e3974c10dc957938d251f37ef492257eb6cd3ffabfcf18.gordion ITEM#dce35462c1d35c24a3da2aebf4dc00a8ca88f8d31ca419357ded4e24a8dbb73b.gordion ITEM#0d418a14560155693e08b6c8ebab142faf8784db70c5d7a3ecebf1a344045379.gordion ITEM#668ac34eaa1c3c0d7d0ee479824915829774b19c28b2b4f7f804098edbde2348.gordion ITEM#6acc7cded592727cdfa2bf8dcca52c8868bcd49ffed8b2acb199cac76723db6f.gordion ITEM#176b66007d357c7016059ba571fb71f8c3085dd9690269bfc64753769bc35d94.gordion ITEM#4d044e1a0ea7d5c3ceeeb9ca8693944e7dbf0d9ab2cd39fda373ecc666408969.gordion ITEM#ecdc05ebbee0726aecb356673d6422de3f788df78e644a7702212f306707d3af.gordion ITEM#76ad9f97b1dac08bb3af385c7f7b0c405281dbb02d2b96ce585f371c523fb7ac.gordion[/cytat]
+[b]6.12 Obrażenia dystansowe[/b]
+Występują w:
+​ ​ ​ • strzałach,
+​ ​ ​ • kołczanach.
+
+f([i]x[/i]) = round(0.051 ⋅ 0.095 ⋅ R([i]x[/i]))
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartość natywnych obrażeń dystansowych.
+ITEM#f86c8d2fcc0506d74009809220467de637c02535ab806daa3d6a404ccc92d0d3.gordion
+
+
+f(100) = round(0.051 ⋅ 0.095 ⋅ (100² + 130 ⋅ 100)) = round(0.004845 ⋅ 23 000) = 111[/cytat]
+[b]6.13 Obrażenia od ognia[/b]
+Występują w:
+​ ​ ​ • broniach jednoręcznych,
+​ ​ ​ • broniach półtoraręcznych,
+​ ​ ​ • broniach dwuręcznych,
+​ ​ ​ • broniach dystansowych,
+​ ​ ​ • różdżkach,
+​ ​ ​ • orbach,
+​ ​ ​ • strzałach,
+​ ​ ​ • kołczanach.
+
+f([i]x[/i]) = round(0.051[i]c[/i] ⋅ R([i]x[/i])),
+gdzie [i]c[/i] wynosi:
+​ ​ ​ • 0.5 dla broni jednoręcznych,
+​ ​ ​ • 0.65 dla broni półtoraręcznych,
+​ ​ ​ • 0.75 dla broni dwuręcznych,
+​ ​ ​ • 0.71 dla broni dystansowych,
+​ ​ ​ • 1 dla różdżek,
+​ ​ ​ • 0.475 dla orbów,
+​ ​ ​ • 0.15 dla strzał i kołczanów.
+
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości natywnych obrażeń od ognia w zależności od różnego typu przedmiotu.
+ITEM#09984c5009e1f721d9f956629af8204a0f05a303e950bd3b0714bfa1203d44c2.gordion ITEM#176b66007d357c7016059ba571fb71f8c3085dd9690269bfc64753769bc35d94.gordion ITEM#2f74f65eb01111e5e86575a6a83d7ae4abf61fd4d9f95a9b03143a63e9876c27.gordion
+
+
+1. f(100) = round(0.051 ⋅ 0.5 ⋅ (100² + 130 ⋅ 100)) = round(0.0255 ⋅ 23 000) = 587
+2. f(100) = round(0.051 ⋅ 0.71 ⋅ (100² + 130 ⋅ 100)) = round(0.03621 ⋅ 23 000) = 833
+3. f(100) = round(0.051 ⋅ 0.15 ⋅ (100² + 130 ⋅ 100)) = round(0.00765 ⋅ 23 000) = 176
+
+Poniżej zaprezentowano wartości natywnych obrażeń fizycznych dla wszystkich wymienionych typów przedmiotów.
+ITEM#09984c5009e1f721d9f956629af8204a0f05a303e950bd3b0714bfa1203d44c2.gordion ITEM#bf0cd3b96d4cfdae095d262dfa38d2e9250607bff5fb831c317f5c0242abd0f5.gordion ITEM#0d418a14560155693e08b6c8ebab142faf8784db70c5d7a3ecebf1a344045379.gordion ITEM#176b66007d357c7016059ba571fb71f8c3085dd9690269bfc64753769bc35d94.gordion ITEM#10bc597b788c0de3e60588ce3c45aed2743e25ca894441a3c941898e691cdd5a.gordion ITEM#0f076f8ab5db7da38e051da42dcf23d6cb54189286cbb389c2cc9e913309e8cf.gordion ITEM#2f74f65eb01111e5e86575a6a83d7ae4abf61fd4d9f95a9b03143a63e9876c27.gordion[/cytat]
+[b]6.14 Obrażenia od błyskawic[/b]
+Występują w:
+​ ​ ​ • broniach jednoręcznych,
+​ ​ ​ • broniach półtoraręcznych,
+​ ​ ​ • broniach dwuręcznych,
+​ ​ ​ • broniach dystansowych,
+​ ​ ​ • różdżkach,
+​ ​ ​ • orbach,
+​ ​ ​ • strzałach,
+​ ​ ​ • kołczanach.
+
+Wartość minimalna obrażeń: f([i]x[/i]) ≈ round(0.8 ⋅ 0.051[i]c[/i] ⋅ R([i]x[/i])).
+Wartość maksymalna obrażeń: g([i]x[/i]) ≈ round(1.2 ⋅ 0.051[i]c[/i] ⋅ R([i]x[/i])).
+[i]c[/i] wynosi:
+​ ​ ​ • 0.5 dla broni jednoręcznych,
+​ ​ ​ • 0.65 dla broni półtoraręcznych,
+​ ​ ​ • 0.75 dla broni dwuręcznych,
+​ ​ ​ • 0.71 dla broni dystansowych,
+​ ​ ​ • 55 ⁄ 48 dla różdżek,
+​ ​ ​ • 23 ⁄ 48 dla orbów,
+​ ​ ​ • 0.15 dla strzał i kołczanów.
+
+Wzory na bonus obrażeń od błyskawic są przybliżone. Powodem niedokładności może być niepoprawne zaokrąglanie bonusu przez silnik gry. Więcej informacji w temacie https://forum.margonem.pl/?task=forum&show=posts&id=515985
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości natywnych obrażeń od błyskawic w zależności od różnego typu przedmiotu.
+ITEM#3f7db9cb6788d1b54953d4dc5945364a23f768dd08340de27ebedac65b6d4cc6.gordion ITEM#5fcacd2c7f756ab9fdbc17682c33bf8cfbe450a8ce239da387e3fafae5ac993b.gordion ITEM#cb549c61d158d1422efdc018107fdb3b337a9bb1888166fd37a58580fe8c7612.gordion
+
+
+1. f(100) ≈ round(0.8 ⋅ 0.051 ⋅ 0.5 ⋅ (100² + 130 ⋅ 100)) = round(0.0204 ⋅ 23 000) = 469
+​ ​ ​ ​ g(100) ≈ round(1.2 ⋅ 0.051 ⋅ 0.5 ⋅ (100² + 130 ⋅ 100)) = round(0.0306 ⋅ 23 000) = 704
+2. f(100) ≈ round(0.8 ⋅ 0.051 ⋅ 0.71 ⋅ (100² + 130 ⋅ 100)) = round(0.028968 ⋅ 23 000) = 666
+​ ​ ​ ​ g(100) ≈ round(1.2 ⋅ 0.051 ⋅ 0.71 ⋅ (100² + 130 ⋅ 100)) = round(0.043452 ⋅ 23 000) = 999
+3. f(100) ≈ round(0.8 ⋅ 0.051 ⋅ 0.15 ⋅ (100² + 130 ⋅ 100)) = round(0.00612 ⋅ 23 000) = 141
+​ ​ ​ ​ g(100) ≈ round(1.2 ⋅ 0.051 ⋅ 0.15 ⋅ (100² + 130 ⋅ 100)) = round(0.00918 ⋅ 23 000) = 211
+
+Poniżej zaprezentowano wartości natywnych obrażeń od błyskawic dla wszystkich wymienionych typów przedmiotów.
+ITEM#3f7db9cb6788d1b54953d4dc5945364a23f768dd08340de27ebedac65b6d4cc6.gordion ITEM#b9a8185512e434846ee9d37c97efbccbb38482f608de69a6c30597841752a252.gordion ITEM#6e71bf17684329a3408ed02b28e5abda5c6d141166c6b1e1256cada20f1766c8.gordion ITEM#5fcacd2c7f756ab9fdbc17682c33bf8cfbe450a8ce239da387e3fafae5ac993b.gordion ITEM#a27eb82cb816e9f45e5eed507bd9621a1dd236b80436d14788d92bb3db1abaa5.gordion  ITEM#bafc15e71d91f43404c1eb308c09b66b1720c3a3c8470d32ae9dccecc2c247f6.gordion ITEM#cb549c61d158d1422efdc018107fdb3b337a9bb1888166fd37a58580fe8c7612.gordion[/cytat]
+[b]6.15 Obrażenia od zimna[/b]
+Występują w:
+​ ​ ​ • broniach jednoręcznych,
+​ ​ ​ • broniach półtoraręcznych,
+​ ​ ​ • broniach dwuręcznych,
+​ ​ ​ • broniach dystansowych,
+​ ​ ​ • różdżkach,
+​ ​ ​ • orbach,
+​ ​ ​ • strzałach,
+​ ​ ​ • kołczanach.
+
+Obrażenia: f([i]x[/i]) = round(0.051[i]c[/i] ⋅ R([i]x[/i])),
+gdzie [i]c[/i] wynosi:
+​ ​ ​ • 0.45 dla broni jednoręcznych,
+​ ​ ​ • 0.585 dla broni półtoraręcznych,
+​ ​ ​ • 0.675 dla broni dwuręcznych,
+​ ​ ​ • 0.64 dla broni dystansowych,
+​ ​ ​ • 0.85 dla różdżek,
+​ ​ ​ • 0.425 dla orbów,
+​ ​ ​ • 0.135 dla strzał i kołczanów.
+
+Spowolnienie: g([i]x[/i]) = 0.01 ⋅ round([i]cx[/i]),
+gdzie [i]c[/i] wynosi:
+​ ​ ​ • 0.95635 dla broni jednoręcznych,
+​ ​ ​ • 0.95635 dla broni półtoraręcznych,
+​ ​ ​ • 0.95635 dla broni dwuręcznych,
+​ ​ ​ • 0.733125 dla broni dystansowych,
+​ ​ ​ • 1 dla różdżek,
+​ ​ ​ • 0.733125 dla orbów,
+​ ​ ​ • 0.733125 dla strzał i kołczanów.
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości natywnych obrażeń od zimna w zależności od różnego typu przedmiotu.
+ITEM#948bbb0de2dea68a86687333c218b5eb9f815ea925179cabda747f08f3fc9ba3.gordion ITEM#1434dd359a2f0f5358b6bccc005bad8cbf7ecfae2a1e143e068be36dc11a44c4.gordion ITEM#dd322436ecd2c4af96e5a42c8686542c7e188d9c11ac5941510b4d797ab6ce35.gordion
+
+
+1. f(100) = round(0.051 ⋅ 0.45 ⋅ (100² + 130 ⋅ 100)) = round(0.02295 ⋅ 23 000) = 528
+​ ​ ​ ​ g(100) = 0.01 ⋅ round(0.95635 ⋅ 100) = 0.96
+2. f(100) = round(0.051 ⋅ 0.64 ⋅ (100² + 130 ⋅ 100)) = round(0.03264 ⋅ 23 000) = 751
+​ ​ ​ ​ g(100) = 0.01 ⋅ round(0.733125 ⋅ 100) = 0.73
+3. f(100) = round(0.051 ⋅ 0.135 ⋅ (100² + 130 ⋅ 100)) = round(0.006885 ⋅ 23 000) = 158
+​ ​ ​ ​ g(100) = 0.01 ⋅ round(0.733125 ⋅ 100) = 0.73
+
+Poniżej zaprezentowano wartości natywnych obrażeń od zimna dla wszystkich wymienionych typów przedmiotów.
+ITEM#948bbb0de2dea68a86687333c218b5eb9f815ea925179cabda747f08f3fc9ba3.gordion ITEM#a0f73bd29ffea34f7d268f44e1b83fa6ead9784771b47338a70417c13e669757.gordion ITEM#fdfad0fc683c707374247f774c2a54c9d2a06102cb03ec3d4e7f5f37c15cf994.gordion ITEM#1434dd359a2f0f5358b6bccc005bad8cbf7ecfae2a1e143e068be36dc11a44c4.gordion ITEM#9ffd9e64d25889eff58d86e00f177ac88b0e2676cc583821f9b00a89fef1b33b.gordion ITEM#58ad6598b9c3190fcb5382d3888457a8250aae882f37944974f222f2b6f304cd.gordion ITEM#dd322436ecd2c4af96e5a42c8686542c7e188d9c11ac5941510b4d797ab6ce35.gordion[/cytat]
+[b]6.16 Niszczenie pancerza[/b]
+Występuje w:
+​ ​ ​ • strzałach,
+​ ​ ​ • kołczanach.
+
+Jeżeli w przedmiocie występuje jednocześnie nadany i natywny bonus niszczenia pancerza, to są one zaokrąglane osobno. Jest to błąd silnika gry. Więcej informacji w temacie https://forum.margonem.pl/?task=forum&show=posts&id=515985
+
+f([i]x[/i]) = round(0.0008[i]c[/i]([i]x[/i]² + 130[i]x[/i] + 620)),
+gdzie [i]c[/i] zależy od wymaganych przez przedmiot profesji:
+​ ​ ​ • h: 1,
+​ ​ ​ • th: 1,
+​ ​ ​ • pozostałe profesje: 0.
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartość natywnego niszczenia pancerza.
+ITEM#f86c8d2fcc0506d74009809220467de637c02535ab806daa3d6a404ccc92d0d3.gordion
+
+
+f(100) = round(0.0008 ⋅ 1 ⋅ (100² + 130 ⋅ 100 + 620)) = round(0.0008 ⋅ 23 620) = 19[/cytat]
+[b]6.17 Niszczenie odporności[/b]
+Występuje w:
+​ ​ ​ • broniach jednoręcznych z obrażeniami magicznymi,
+​ ​ ​ • broniach półtoraręcznych z obrażeniami magicznymi,
+​ ​ ​ • broniach dwuręcznych z obrażeniami magicznymi,
+​ ​ ​ • strzałach z obrażeniami magicznymi,
+​ ​ ​ • kołczanach z obrażeniami magicznymi.
+
+Wartość zawsze wynosi 1.
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości natywnego niszczenia odporności w zależności od różnego typu przedmiotu.
+ITEM#09984c5009e1f721d9f956629af8204a0f05a303e950bd3b0714bfa1203d44c2.gordion ITEM#bf0cd3b96d4cfdae095d262dfa38d2e9250607bff5fb831c317f5c0242abd0f5.gordion ITEM#0d418a14560155693e08b6c8ebab142faf8784db70c5d7a3ecebf1a344045379.gordion ITEM#2f74f65eb01111e5e86575a6a83d7ae4abf61fd4d9f95a9b03143a63e9876c27.gordion[/cytat]
+[center]⁂[/center]
+[b]7 Changelog[/b]
+06.09.2023:
+​ ​ ​ • Publikacja tematu.
+03.10.2023:
+​ ​ ​ • Zmieniono błędny współczynnik obrażeń dystansowych z 0.95 na 0.095.
+​ ​ ​ • Zmieniono błędne łączenie profesji „wth” na „wbh” we współczynniku [i]c[/i] w natywnym pancerzu.
+​ ​ ​ • Poprawiono typy przedmiotów we współczynniku [i]c[/i] w niszczeniu absorpcji:
+​ ​ ​ ​ ​ ​ ◦ Współczynnik 1.1 dotyczy broni jednoręcznych dla samego tancerza ostrzy, a nie wszystkich broni jednoręcznych za wyjątkiem tych dla samego paladyna.
+​ ​ ​ ​ ​ ​ ◦ Współczynnik 1 dotyczy wszystkich broni jednoręcznych za wyjątkiem broni dla samego tancerza ostrzy, a nie broni jednoręcznych dla samego paladyna.
+​ ​ ​ • Poprawiono błędny zapis łączenia profesji „bth” we współczynnikach [i]m[/i] i [i]c[/i] w natywnych odpornościach magicznych.
+​ ​ ​ • Poprawiono błędny zapis łączenia profesji „bth” we współczynniku [i]c[/i] w natywnej odporności na truciznę.
+​ ​ ​ • Poprawiono błędny zapis łączenia profesji „th” we współczynniku [i]c[/i] w natywnym niszczeniu pancerza.
+30.11.2023:
+​ ​ ​ • Zmieniono współczynnik [i]c[/i] w bonusie obrażeń od błyskawic po aktualizacji silnika gry do wersji 48.7.0 dnia 22.11.2023:
+​ ​ ​ ​ ​ ​ ◦ Wartość współczynnika dla różdżek zmieniona z 1.25 na 1.14583̅ = 55 ⁄ 48.
+​ ​ ​ ​ ​ ​ ◦ Wartość współczynnika dla orbów zmieniona z 0.5 na 0.47916̅ = 23 ⁄ 48.
+29.12.2023:
+​ ​ ​ • Usunięcie informacji o nieaktualnym przykładzie w bonusie obrażeń od błyskawic.
+31.01.2024:
+​ ​ ​ • Zmiana wartości wyrazu wolnego w bonusie obniżania niszczenia pancerza z 0.75 na 1. Zmiana ta jest wynikiem zmiany zaokrąglania statystyk w silniku gry z dnia 29.01.2024.
+12.02.2024:
+​ ​ ​ • Zmieniono współczynnik [i]c[/i] w natywnym bonusie pancerza:
+​ ​ ​ ​ ​ ​ ◦ w: 1.4 → 1.08,
+​ ​ ​ ​ ​ ​ ◦ wp: 1.2 → 1.04,
+​ ​ ​ ​ ​ ​ ◦ wb: 1.15 → 0.99,
+​ ​ ​ ​ ​ ​ ◦ pt: 0.85 → 0.92,
+​ ​ ​ ​ ​ ​ ◦ pb: 1 → 0.95,
+​ ​ ​ ​ ​ ​ ◦ bt: 1 → 0.8,
+​ ​ ​ ​ ​ ​ ◦ wpb: 1 → 0.96,
+​ ​ ​ ​ ​ ​ ◦ wbh: 1 → 0.93,
+​ ​ ​ ​ ​ ​ ◦ wpbh: 1 → 0.96.
+​ ​ ​ • Zmieniono współczynnik [i]c[/i] w natywnym bonusie absorpcji fizycznej:
+​ ​ ​ ​ ​ ​ ◦ pt: 0 → 1.2,
+​ ​ ​ ​ ​ ​ ◦ pmt: 3.4 → 3.36.
+​ ​ ​ • Zmieniono współczynnik [i]c[/i] w natywnym bonusie absorpcji magicznej:
+​ ​ ​ ​ ​ ​ ◦ pt: 0 → 0.6,
+​ ​ ​ ​ ​ ​ ◦ pmt: 1.6 → 1.68.
+​ ​ ​ • Zmieniono współczynniki [i]m[/i] i [i]c[/i] w natywnym bonusie odporności magicznej:
+​ ​ ​ ​ ​ ​ ◦ pb: 0 i 0 → 1 i 4,
+​ ​ ​ ​ ​ ​ ◦ bt: 0 i 0 → 1 i 5,
+​ ​ ​ ​ ​ ​ ◦ wpb: 0 i 0 → 1 i 2,
+​ ​ ​ ​ ​ ​ ◦ wpbh: 0 i 0 → 1 i 3.
+​ ​ ​ • Zmieniono współczynnik [i]c[/i] w natywnym bonusie odporności na truciznę:
+​ ​ ​ ​ ​ ​ ◦ w: 0 → 1,
+​ ​ ​ ​ ​ ​ ◦ wp: 0 → 1,
+​ ​ ​ ​ ​ ​ ◦ wb: 4 → 5,
+​ ​ ​ ​ ​ ​ ◦ pb: 0 → 4,
+​ ​ ​ ​ ​ ​ ◦ bt: 0 → 10,
+​ ​ ​ ​ ​ ​ ◦ wpb: 0 → 6,
+​ ​ ​ ​ ​ ​ ◦ wpbh: 0 → 6.
+​ ​ ​ • Zmieniono współczynnik [i]c[/i] w natywnym bonusie many:
+​ ​ ​ ​ ​ ​ ◦ pm: 0 → 0.5.
+​ ​ ​ • Zmieniono wzór na natywny bonus życia za siłę z 0.01 ⋅ round([i]cx[/i]) na 0.1 ⋅ round(1 ⁄ 10 ⋅ [i]cx[/i]).
+​ ​ ​ • Zmieniono współczynnik [i]c[/i] w natywnym bonusie życia za siłę:
+​ ​ ​ ​ ​ ​ ◦ wb: 0 → 1 ⁄ 2,
+​ ​ ​ ​ ​ ​ ◦ pb: 0 → 1 ⁄ 2,
+​ ​ ​ ​ ​ ​ ◦ wpb: 0 → 1 ⁄ 1.66,
+​ ​ ​ ​ ​ ​ ◦ wpbd: 0 → 1 ⁄ 2.
+​ ​ ​ • Zmieniono wzór na natywny bonus uniku z round(1 ⁄ 3 ⋅ [i]cx[/i]) na round([i]cx[/i]) oraz współczynnik [i]c[/i]:
+​ ​ ​ ​ ​ ​ ◦ b: 1 → 1 ⁄ 3.
+​ ​ ​ • Zmieniono współczynnik [i]c[/i] w natywnym bonusie uniku:
+​ ​ ​ ​ ​ ​ ◦ bt: 0 → 1 ⁄ 6,
+​ ​ ​ ​ ​ ​ ◦ bh: 0 → 1 ⁄ 6,
+​ ​ ​ ​ ​ ​ ◦ bth: 0 → 1 ⁄ 7,
+​ ​ ​ • Zmieniono współczynnik [i]c[/i] w natywnym bonusie szybkości ataku:
+​ ​ ​ ​ ​ ​ ◦ bt: 0 → 1 ⁄ 5.5,
+​ ​ ​ ​ ​ ​ ◦ bh: 1 ⁄ 3 → 0.25,
+​ ​ ​ ​ ​ ​ ◦ bth: 1 ⁄ 3 → 0.25,
+​ ​ ​ • Usunięto informację o niewystępowaniu ujemnego modyfikatora rzadkości w przedmiotach zwykłych oraz dodatniego modyfikatora rzadkości w przedmiotach legendarnych.
+21.02.2024:
+​ ​ ​ • Zmieniono błędne łączenie profesji „pm” na „pt” we współczynniku [i]c[/i] w natywnej absorpcji magicznej.
+​ ​ ​ • Zmieniono błędną wartość współczynnika [i]c[/i] w natywnej odporności na truciznę dla łączenia profesji „wpb” z 6 na 3.
+​ ​ ​ • Zaktualizowano link do tematu z błędami zaokrągleń.
+[b][/b]

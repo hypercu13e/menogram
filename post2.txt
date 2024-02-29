@@ -1,0 +1,413 @@
+[b]3 Bonusy nadane[/b]
+[b]3.1 Pancerz[/b]
+f([i]x[/i], [i]n[/i]) = round(0.003[i]np[/i]([i]x[/i]² + 130[i]x[/i]))
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości statystyki „pancerz” w zależności od różnej liczby rozdanych bonusów, różnego poziomu przedmiotu oraz różnego typu przedmiotu.
+ITEM#038042f277e21a472d9434d2300ec8803902d0e552152fba7cb2d24bfdd3f5b6.gordion ITEM#181b760ae4a93fabb6ecc9c6c053cd2ad2f75fa7b92802cf740a8e1b0038ccfc.gordion ITEM#dba1af6c4a0c4a5fefbe9e748eff609cd1e27f086ed9fcfc2c1da82d61ae0ad9.gordion ITEM#7e39833c2b3f90a08cc5a683e2be4723aed113d10b49b717f4b171674ef16c5c.gordion
+
+
+1. f(100, 1) = round(0.003 ⋅ 1 ⋅ 1 ⋅ (100² + 130 ⋅ 100)) = round(0.003 ⋅ 23 000) = 69
+2. f(100, 2) = round(0.003 ⋅ 2 ⋅ 1 ⋅ (100² + 130 ⋅ 100)) = round(0.006 ⋅ 23 000) = 138
+3. f(300, 1) = round(0.003 ⋅ 1 ⋅ 1 ⋅ (300² + 130 ⋅ 300)) = round(0.003 ⋅ 129 000) = 387
+4. f(100, 1) = round(0.003 ⋅ 1 ⋅ 0.25 ⋅ (100² + 130 ⋅ 100)) = round(0.00075 ⋅ 23 000) = 17 (przedmiot posiada dodatkowo natywny pancerz o wartości 80.5)[/cytat]
+[b]3.2 Niszczenie pancerza[/b]
+f([i]x[/i], [i]n[/i]) = round(0.0003[i]nc[/i]([i]x[/i]² + 130[i]x[/i]) + 1),
+gdzie [i]c[/i] wynosi:
+​ ​ ​ • 4 ⁄ 3 dla broni,
+​ ​ ​ • 1 dla pozostałych przedmiotów.
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości statystyki „niszczenie pancerza” w zależności od różnej liczby rozdanych bonusów, różnego poziomu przedmiotu oraz różnego typu przedmiotu.
+ITEM#d7def77ffb25c35ad6af15421f159e9ac28289f336ea13cb286b04b7c1c3315e.gordion ITEM#0f9f6586ecb0aae77824144519a98c170c4861ec9571090d1dffee256b5b078d.gordion ITEM#4426146e8fee23e02174510e0fee24aeba75672d9ac64a87bf8770d5b2d6af9e.gordion ITEM#7e03bc1c3e955912e5b004cd9455d002eac26a86b41d29748c86d3f4fb4bb00c.gordion
+
+
+1. f(100, 1) = round(0.0003 ⋅ 1 ⋅ 4 ⁄ 3 ⋅ (100² + 130 ⋅ 100) + 1) = round(0.0004 ⋅ 23 000 + 1) = 10
+2. f(100, 2) = round(0.0003 ⋅ 2 ⋅ 4 ⁄ 3 ⋅ (100² + 130 ⋅ 100) + 1) = round(0.0008 ⋅ 23 000 + 1) = 19
+3. f(300, 1) = round(0.0003 ⋅ 1 ⋅ 4 ⁄ 3 ⋅ (300² + 130 ⋅ 300) + 1) = round(0.0004 ⋅ 129 000 + 1) = 53
+4. f(100, 1) = round(0.0003 ⋅ 1 ⋅ 1 ⋅ (100² + 130 ⋅ 100) + 1) = round(0.0003 ⋅ 23 000 + 1) = 8[/cytat]
+[b]3.3 Absorpcja[/b]
+f([i]x[/i], [i]n[/i]) = round(0.012[i]np[/i]([i]x[/i]² + 130[i]x[/i]))
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości statystyk „absorpcja fizyczna” i „absorpcja magiczna” w zależności od różnej liczby rozdanych bonusów, różnego poziomu przedmiotu oraz różnego typu przedmiotu.
+ITEM#9d4262a328711c2fe28b63ed8820f6a3520ff36c19ab00ea47f9f8c17f329b89.gordion ITEM#b3663ce0b11258a90c0a651d7104d3eabd89d0f76e3b2cebac5c29b4581d5726.gordion ITEM#af94b9a089dffe9219288d46ce28fdbfb6dc950cb852145b3deb122cdfd45b84.gordion ITEM#e2aa57e9373470d556225afbaa60a53a5ebd26467574f9b499841fcf07cb364d.gordion
+
+
+1. f(100, 1) = round(0.012 ⋅ 1 ⋅ 1 ⋅ (100² + 130 ⋅ 100)) = round(0.012 ⋅ 23 000) = 276
+2. f(100, 2) = round(0.012 ⋅ 2 ⋅ 1 ⋅ (100² + 130 ⋅ 100)) = round(0.024 ⋅ 23 000) = 552
+3. f(300, 1) = round(0.012 ⋅ 1 ⋅ 1 ⋅ (300² + 130 ⋅ 300)) = round(0.012 ⋅ 129 000) = 1548
+4. f(100, 1) = round(0.012 ⋅ 1 ⋅ 0.25 ⋅ (100² + 130 ⋅ 100)) = round(0.003 ⋅ 23 000) = 69 (przedmiot posiada dodatkowo natywną absorpcję fizyczną i magiczną o wartości kolejno 230 i 115)[/cytat]
+[b]3.4 Niszczenie absorpcji[/b]
+f([i]x[/i], [i]n[/i]) = round(0.006[i]nc[/i] ⋅ R([i]x[/i])),
+gdzie [i]c[/i] wynosi:
+​ ​ ​ • 1.1 dla broni jednoręcznych dla samego tancerza ostrzy,
+​ ​ ​ • 1 dla pozostałych broni jednoręcznych,
+​ ​ ​ • 1.1 dla broni półtoraręcznych,
+​ ​ ​ • 1.2 dla broni dwuręcznych,
+​ ​ ​ • 1 dla broni dystansowych,
+​ ​ ​ • 1 dla różdżek,
+​ ​ ​ • 0.8 dla broni pomocniczych,
+​ ​ ​ • 0.7 dla orbów,
+​ ​ ​ • 0.4 dla strzał i kołczanów,
+​ ​ ​ • 0 dla pozostałych przedmiotów.
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości statystyki „niszczenie absorpcji” w zależności od różnej rzadkości przedmiotu, różnego poziomu przedmiotu oraz różnego typu przedmiotu.
+ITEM#58e4c9b55aed40fe86919e8bfc5c36469cd7e687a41e4679465a4f70074a9ccb.gordion ITEM#2d95a4d1af48eaf47d9e58eaf80c15bdfc94968a0217b7616ce562202bc38324.gordion ITEM#57c0702ee6d05c42198890e6d37c409a5e5d94654cf98f71cab86599c7861a6c.gordion ITEM#0ce181d925d5085c366c7efb8ab19584ad6ccdf6f64c457a5a87924589dd9d45.gordion
+
+
+1. f(100, 1) = round(0.006 ⋅ 1 ⋅ 1.2 ⋅ (100² + 130 ⋅ 100)) = round(0.0072 ⋅ 23 000) = 166
+2. f(100, 1) = round(0.006 ⋅ 1 ⋅ 1.2 ⋅ (100² + 140 ⋅ 100 + 1300)) = round(0.0072 ⋅ 25 300) = 182
+3. f(300, 1) = round(0.006 ⋅ 1 ⋅ 1.2 ⋅ (300² + 130 ⋅ 300)) = round(0.0072 ⋅ 129 000) = 929
+4. f(100, 1) = round(0.006 ⋅ 1 ⋅ 0.7 ⋅ (100² + 130 ⋅ 100)) = round(0.0042 ⋅ 23 000) = 97[/cytat]
+[b]3.5 Odporność magiczna[/b]
+f([i]n[/i]) = 3[i]n[/i]
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości statystyk „odporność na ogień”, „odporność na błyskawice” i „odporność na zimno” w zależności od różnej liczby rozdanych bonusów.
+ITEM#a332507309016e7a6ac976852e9c1cc114039aa4f06bc1ddec5f4573514174b8.gordion
+
+
+1.1. f(−1) = −3
+1.2. f(1) = 3
+1.3. f(2) = 6[/cytat]
+[b]3.6 Odporność na truciznę[/b]
+f([i]n[/i]) = 5[i]n[/i]
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości statystyki „odporność na truciznę” w zależności od różnej liczby rozdanych bonusów.
+ITEM#64679e0ed2fcc8064709cf9b9b8ee38151256971ea6bf4080dbb66bb26ce62d1.gordion ITEM#b036d26b093a7f9baaa864dbd1d523bfe0646f157ddeece9a0491d0ab61f7a42.gordion
+
+
+1. f(1) = 5
+2. f(−1) = −5[/cytat]
+[b]3.7 Niszczenie odporności[/b]
+f([i]n[/i]) = [i]n[/i]
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartość statystyki „niszczenie odporności”.
+ITEM#d4d6c8420f60e4f83e6e051d288d57dcba9f0fa6d881fd65ce7252853009d8c4.gordion
+
+
+f(1) = 1[/cytat]
+[b]3.8 Cios krytyczny[/b]
+f([i]n[/i]) = [i]n[/i]
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartość statystyki „cios krytyczny”.
+ITEM#d09667f45e5e7c99e2fbd3497d4d1a85a16c8849b17d1474e37770237002b2aa.gordion
+
+
+f(1) = 1[/cytat]
+[b]3.9 Obniżanie ciosu krytycznego[/b]
+f([i]n[/i]) = 2[i]n[/i]
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartość statystyki „obniżanie ciosu krytycznego”.
+ITEM#efc89e06d5fef53846ca227fac6130e491fc471c0b2fadd0186101559a692e21.gordion
+
+
+f(1) = 2[/cytat]
+[b]3.10 Siła ciosu krytycznego[/b]
+f([i]n[/i]) = 6[i]n[/i]
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości statystyk „siła ciosu krytycznego fizycznego” i „siła ciosu krytycznego magicznego” w zależności od różnej liczby rozdanych bonusów.
+ITEM#5f4bd0ddc4e835b8bef518076548859394be76396ae3061958f8569339e6960c.gordion ITEM#7ab50284e4e4a28c236f4b57269c68238bc007968384c6aa8ff1813c0dd809f6.gordion
+
+
+1. f(1) = 6
+2. f(−1) = −6[/cytat]
+[b]3.11 Siła, zręczność, intelekt[/b]
+f([i]x[/i], [i]n[/i]) = round(5 ⁄ 9 ⋅ [i]nx[/i] + 4)
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości statystyk „siła”, „zręczność” i „intelekt” w zależności od różnej liczby rozdanych bonusów oraz różnego poziomu przedmiotu.
+ITEM#b8c458764267fe0280aa2192324a7c6fbf290f1fa932614949027541bd2c426f.gordion ITEM#2996e94159780589de8b2c89cc582a3bb0437598689d7413b918594ec5d533c3.gordion
+
+
+1.1. f(100, −1) = round(5 ⁄ 9 ⋅ (−1) ⋅ 100) + 4) = round(−500 ⁄ 9 + 4) = −52
+1.2. f(100, 1) = round(5 ⁄ 9 ⋅ 1 ⋅ 100 + 4) = round(500 ⁄ 9 + 4) = 60
+1.3. f(100, 2) = round(5 ⁄ 9 ⋅ 2 ⋅ 100 + 4) = round(1000 ⁄ 9 + 4) = 115
+2.1. f(300, −1) = round(5 ⁄ 9 ⋅ (−1) ⋅ 300) + 4) = round(−1500 ⁄ 9 + 4) = −163
+2.2. f(300, 1) = round(5 ⁄ 9 ⋅ 1 ⋅ 300 + 4) = round(1500 ⁄ 9 + 4) = 171
+2.3. f(300, 2) = round(5 ⁄ 9 ⋅ 2 ⋅ 300 + 4) = round(3000 ⁄ 9 + 4) = 337[/cytat]
+[b]3.12 Wszystkie cechy[/b]
+f([i]x[/i], [i]n[/i]) = round(0.25[i]nx[/i] + 8)
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości statystyki „wszystkie cechy” w zależności od różnej liczby rozdanych bonusów oraz różnego poziomu przedmiotu.
+ITEM#0555008ad2d2119ca4df654c050cb0be5ab4efc3c92d8e0cd82bb5c18e3bcbb3.gordion ITEM#bc1884dd86b9bb81eadc1711c629aa97d2394e81856506959e67c0651e3634a1.gordion ITEM#cb538f19c8f13cb035997109af8451b649dc9625410befcd6422a0d7d1fc2829.gordion
+
+
+1. f(100, 1) = round(0.25 ⋅ 1 ⋅ 100 + 8) = round(25 + 8) = 33
+2. f(100, 2) = round(0.25 ⋅ 2 ⋅ 100 + 8) = round(50 + 8) = 58
+3. f(300, 1) = round(0.25 ⋅ 1 ⋅ 300 + 8) = round(75 + 8) = 83[/cytat]
+[b]3.13 Energia[/b]
+f([i]x[/i], [i]n[/i]) = round(1 ⁄ 15 ⋅ [i]n[/i]([i]x[/i] + 150))
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości statystyki „energia” w zależności od różnej liczby rozdanych bonusów oraz różnego poziomu przedmiotu.
+ITEM#31ee8be9cc06a61a1b23e846fb1fac2df6788fe2288de69ab92c9a4c6731486d.gordion ITEM#3e94b0503e41526ff246de01d31edf7ffb2d12974f9260bbde8586ae36e81f36.gordion ITEM#67ae747abe189624461bc9083ef2216549dae16d038105b6f164cec852b86c39.gordion
+
+
+1. f(100, 1) = round(1 ⁄ 15 ⋅ 1 ⋅ (100 + 150)) = round(250 ⁄ 15) = 17
+2. f(100, 2) = round(1 ⁄ 15 ⋅ 2 ⋅ (100 + 150)) = round(500 ⁄ 15) = 33
+3. f(300, 1) = round(1 ⁄ 15 ⋅ 1 ⋅ (300 + 150)) = round(450 ⁄ 15) = 30[/cytat]
+[b]3.14 Niszczenie energii[/b]
+f([i]x[/i], [i]n[/i]) = round(0.02[i]n[/i]([i]x[/i] + 100))
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości statystyki „niszczenie energii” w zależności od różnej liczby rozdanych bonusów oraz różnego poziomu przedmiotu.
+ITEM#7a6360ff20db7312a75ace16de70c8511052539009a65028804f49b4c9870359.gordion ITEM#f6e16e9c56633770136026b740369c0f7e016f6487f30c2ac2f2963186a03ee1.gordion ITEM#babbca517d417b7623d68501d47098702de129f6132db0672efa8b04aa375114.gordion
+
+
+1. f(100, 1) = round(0.02 ⋅ 1 ⋅ (100 + 100)) = round(0.02 ⋅ 200) = 4
+2. f(100, 2) = round(0.02 ⋅ 2 ⋅ (100 + 100)) = round(0.04 ⋅ 200) = 8
+3. f(300, 1) = round(0.02 ⋅ 1 ⋅ (300 + 100)) = round(0.02 ⋅ 400) = 8[/cytat]
+[b]3.15 Mana[/b]
+f([i]x[/i], [i]n[/i]) = round(0.25[i]nx[/i])
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości statystyki „mana” w zależności od różnej liczby rozdanych bonusów oraz różnego poziomu przedmiotu.
+ITEM#4a3cf613f7a406b7e10aeb85ac0c09ac337f352facaceaae804846285dc1b303.gordion ITEM#e9c9eae3b5a7251d830772bde9197170d258368a1a458613169c2925727ed50f.gordion ITEM#b89151de186b1a2514e4dcb79ddc72b743a40dc367852ff5bc5ea1b9fbb6c22e.gordion
+
+
+1. f(100, 1) = round(0.25 ⋅ 1 ⋅ 100) = round(0.25 ⋅ 100) = 25
+2. f(100, 2) = round(0.25 ⋅ 2 ⋅ 100) = round(0.5 ⋅ 100) = 50
+3. f(300, 1) = round(0.25 ⋅ 1 ⋅ 300) = round(0.25 ⋅ 300) = 75[/cytat]
+[b]3.16 Niszczenie many[/b]
+f([i]x[/i], [i]n[/i]) = round(0.04[i]n[/i]([i]x[/i] + 125))
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości statystyki „niszczenie many” w zależności od różnej liczby rozdanych bonusów oraz różnego poziomu przedmiotu.
+ITEM#f157fadb3b37d67a79ac33211951890db664b4d538de7200f339b517b4103a67.gordion ITEM#25ef91a188600a346a5ac6b2a369610905a46e49af52e6dbf4064b3f068b53bf.gordion ITEM#8ccb6b51db1a8d4820b1196688e60101f89b3f174de1e0b71992f0b0423f7bfd.gordion
+
+
+1. f(100, 1) = round(0.04 ⋅ 1 ⋅ (100 + 125)) = round(0.04 ⋅ 225) = 9
+2. f(100, 2) = round(0.04 ⋅ 2 ⋅ (100 + 125)) = round(0.08 ⋅ 225) = 18
+3. f(300, 1) = round(0.04 ⋅ 1 ⋅ (300 + 125)) = round(0.04 ⋅ 425) = 17[/cytat]
+[b]3.17 Życie[/b]
+f([i]x[/i], [i]n[/i]) = round(3.08[i]n[/i](0.004[i]px[/i]² + (1 + 0.52[i]p[/i])[i]x[/i]) + 24.64)
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości statystyki „życie” w zależności od różnej liczby rozdanych bonusów, różnego poziomu przedmiotu oraz różnego typu przedmiotu.
+ITEM#580647d0e8e272e6b93e9d4275b6ebd82c0dfb4b9296a647ab5efa4a124a0cff.gordion  ITEM#9312a1a7f0f41db1d9e4027d9113e5f45fe5a448724fb2f7d0c8d522fd57eb0c.gordion ITEM#230eb9b6bc5ad24074073d1fff8a2d33f5a2dbdb6bcf173420cdfff3ef14dd35.gordion ITEM#d4a8ad6c388e8daae7b2a4f1066bef8fac404c2802b824b9ba071ccd0d86322e.gordion ITEM#2e9c5b99d37cac5d7eb10b33d46be5d4b0f34e7ee8101f68a1be701542a6eb44.gordion
+
+
+1. f(100, 1) = round(3.08 ⋅ 1 ⋅ (0.004 ⋅ 1 ⋅ 100² + (1 + 0.52 ⋅ 1) ⋅ 100) + 24.64) = round(3.08 ⋅ 192 + 24.64) = 616
+2. f(100, 2) = round(3.08 ⋅ 2 ⋅ (0.004 ⋅ 1 ⋅ 100² + (1 + 0.52 ⋅ 1) ⋅ 100) + 24.64) = round(6.16 ⋅ 192 + 24.64) = 1207
+3. f(100, −1) = round(3.08 ⋅ (−1) ⋅ (0.004 ⋅ 1 ⋅ 100² + (1 + 0.52 ⋅ 1) ⋅ 100) + 24.64) = round(−3.08 ⋅ 192 + 24.64) = −567
+4. f(300, 1) = round(3.08 ⋅ 1 ⋅ (0.004 ⋅ 1 ⋅ 300² + (1 + 0.52 ⋅ 1) ⋅ 300) + 24.64) = round(3.08 ⋅ 816 + 24.64) = 2538
+5. f(100, 1) = round(3.08 ⋅ 1 ⋅ (0.004 ⋅ 0.25 ⋅ 100² + (1 + 0.52 ⋅ 0.25) ⋅ 100) + 24.64) = round(3.08 ⋅ 123 + 24.64) = 403[/cytat]
+[b]3.18 Leczenie[/b]
+f([i]x[/i], [i]n[/i]) = round([i]n[/i](0.004[i]px[/i]² + (0.8 + 0.52[i]p[/i])[i]x[/i]) + 8)
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości statystyki „leczenie” w zależności od różnej liczby rozdanych bonusów, różnego poziomu przedmiotu oraz różnego typu przedmiotu.
+ITEM#8788fb2496899ba5d236833a7116e9358b1ed99e59bb73eb4b6269d8a271edf4.gordion ITEM#77c76e6fe5c2b5b1d0e2281731b91b07b94d849a761ac278fafa7e3f7577f731.gordion ITEM#323b976b5c8a084d9037ad9a413494c3e11b458fb87e2cfedfd58010fda2e345.gordion ITEM#049b6a36dd7ccf2201a4714aeb98b978310d9dd6add059ff3fe45c833a69148e.gordion
+
+
+1. f(100, 1) = round(1 ⋅ (0.004 ⋅ 1 ⋅ 100² + (0.8 + 0.52 ⋅ 1) ⋅ 100) + 8) = round(1 ⋅ 172 + 8) = 180
+2. f(100, 2) = round(2 ⋅ (0.004 ⋅ 1 ⋅ 100² + (0.8 + 0.52 ⋅ 1) ⋅ 100) + 8) = round(2 ⋅ 172 + 8) = 352
+3. f(300, 1) = round(1 ⋅ (0.004 ⋅ 1 ⋅ 300² + (0.8 + 0.52 ⋅ 1) ⋅ 300) + 8) = round(1 ⋅ 756 + 8) = 764
+4. f(100, 1) = round(1 ⋅ (0.004 ⋅ 0.25 ⋅ 100² + (0.8 + 0.52 ⋅ 0.25) ⋅ 100) + 8) = round(1 ⋅ 103 + 8) = 111[/cytat]
+[b]3.19 Obniżanie leczenia[/b]
+f([i]x[/i], [i]n[/i]) = round(0.5[i]n[/i](0.004[i]px[/i]² + (1 + 0.52[i]p[/i])[i]x[/i]) + 4)
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości statystyki „obniżanie leczenia” w zależności od różnej liczby rozdanych bonusów, różnego poziomu przedmiotu oraz różnego typu przedmiotu.
+ITEM#d33175fa6041f04524dcdd91384190e91462d596773c71a75a0549a1a798c4b6.gordion ITEM#d57bb5f7cfc66bbbf5e157e808c5f01a40b386f11d9dec63da418c767be2badb.gordion ITEM#a3b808f6af4ab668b2c4abe4a1f333e5175d6f17f933d4a41005a28b9c48cc6a.gordion ITEM#328d96a4a45f0d058f98c4892248130e07f693982bd9a6c2e05d8e43c560588c.gordion
+
+
+1. f(100, 1) = round(0.5 ⋅ 1 ⋅ (0.004 ⋅ 1 ⋅ 100² + (1 + 0.52 ⋅ 1) ⋅ 100) + 4) = round(0.5 ⋅ 192 + 4) = 100
+2. f(100, 2) = round(0.5 ⋅ 2 ⋅ (0.004 ⋅ 1 ⋅ 100² + (1 + 0.52 ⋅ 1) ⋅ 100) + 4) = round(1 ⋅ 192 + 4) = 196
+3. f(300, 1) = round(0.5 ⋅ 1 ⋅ (0.004 ⋅ 1 ⋅ 300² + (1 + 0.52 ⋅ 1) ⋅ 300) + 4) = round(0.5 ⋅ 816 + 4) = 412
+4. f(100, 1) = round(0.5 ⋅ 1 ⋅ (0.004 ⋅ 0.25 ⋅ 100² + (1 + 0.52 ⋅ 0.25) ⋅ 100) + 4) = round(0.5 ⋅ 123 + 4) = 66[/cytat]
+Bonus obniżania leczenia jest bonusem negatywnym, tj. jest on traktowany tak jakby [i]n[/i] było liczbą przeciwną przy obliczaniu wartości [i]x[/i] lub przy zliczaniu liczby bonusów nadanych.
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartość statystyki „obniżanie leczenia” w przedmiocie ulepszonym na poziom 3.
+ITEM#21bcb5ad3927a14e322aeeabea11a652a3aba66daa02ba92d8b42ebe57fc3789.gordion
+
+
+f(91, 1) = round(0.5 ⋅ 1 ⋅ (0.004 ⋅ 1 ⋅ 91² + (1 + 0.52 ⋅ 1) ⋅ 91) + 4) = round(0.5 ⋅ 171.444 + 4) = 90[/cytat]
+[b]3.20 Unik[/b]
+f([i]x[/i], [i]n[/i]) = round(0.1[i]nx[/i])
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości statystyki „unik” w zależności od różnej liczby rozdanych bonusów oraz różnego poziomu przedmiotu.
+ITEM#025c18724ef9401471f98ab0d091dddef598a673097d47ffc20f8106e213246a.gordion ITEM#db18c080fcf97f7a656497e9e42b90313daedeb4d7706ce1ca5e93a1ba497f3b.gordion ITEM#981ee50a570c2b86e7d847acc92d1548c47f22e3b1379eb9cdded7f60ddfc308.gordion ITEM#e4445ef3a9dff2143332775ed596b53471b97eca39ee859d78ae6e28e920f360.gordion
+
+
+1. f(100, 1) = round(0.1 ⋅ 1 ⋅ 100) = 10
+2. f(100, 2) = round(0.1 ⋅ 2 ⋅ 100) = 20
+3. f(100, −1) = round(0.1 ⋅ (−1) ⋅ 100) = −10
+4. f(300, 1) = round(0.1 ⋅ 1 ⋅ 300) = 30[/cytat]
+[b]3.21 Obniżanie uniku[/b]
+f([i]x[/i], [i]n[/i]) = round(0.1[i]nx[/i])
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości statystyki „obniżanie uniku” w zależności od różnej liczby rozdanych bonusów oraz różnego poziomu przedmiotu.
+ITEM#22cae1c5a6c29ab001abb97d1ea4c3817ea3b804fbff84481dbedcc60afb4453.gordion ITEM#9a1f345c2c51ebb04a7004e4a66a4fb595d24faeee8b62fde5659b4be72e8352.gordion ITEM#86e082c68e82fdde92728902f3c320be520b155a415a4fb2c68d0672833cda55.gordion
+
+
+1. f(100, 1) = round(0.1 ⋅ 1 ⋅ 100) = 10
+2. f(100, 2) = round(0.1 ⋅ 2 ⋅ 100) = 20
+3. f(300, 1) = round(0.1 ⋅ 1 ⋅ 300) = 30[/cytat]
+[b]3.22 Blok[/b]
+f([i]x[/i], [i]n[/i]) = round(0.15[i]nx[/i])
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości statystyki „blok” w zależności od różnej liczby rozdanych bonusów oraz różnego poziomu przedmiotu.
+ITEM#c2c7145e48f7e80a8f556ba5ab7c11ffd6840fe0975b84005feb1122bea5050f.gordion ITEM#2bbbf8132ccc02bb4e1c59f3d4b93b9cc07d7f0a88561836d941c61001482af3.gordion ITEM#d15190b8660969a45a4e753e814395b02f2f9a7445c23203e63377625e222b79.gordion ITEM#0ce06c6fde5752bff230812c2fbacb42002b526826699175bbca2bd0896c3e85.gordion
+
+
+1. f(100, 1) = round(0.15 ⋅ 1 ⋅ 100) = 15
+2. f(100, 2) = round(0.15 ⋅ 2 ⋅ 100) = 30
+3. f(100, −1) = round(0.15 ⋅ (−1) ⋅ 100) = −15
+4. f(300, 1) = round(0.15 ⋅ 1 ⋅ 300) = 45[/cytat]
+[b]3.23 Szybkość ataku[/b]
+f([i]x[/i], [i]n[/i]) = 0.01 ⋅ round(0.25[i]nx[/i] + 8)
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości statystyki „szybkość ataku” w zależności od różnej liczby rozdanych bonusów oraz różnego poziomu przedmiotu.
+ITEM#6b42184bf685e9157b4d9566679ec27b15502f5a67c21b53cb27c6d158f7d0e2.gordion ITEM#510042bf8ec10ce83c569abd2765cecd73506fc62ccc751818bd089b62a98f92.gordion ITEM#16292377033411fb00ff79424a17e41441a1f5ed6728c37ffef09359bad370cb.gordion ITEM#a5bb13610736f0759684c43d2b7cda8351a209438c278a512a8457ef52421660.gordion
+
+
+1. f(100, 1) = 0.01 ⋅ round(0.25 ⋅ 1 ⋅ 100 + 8) = 0.01 ⋅ round(25 + 8) = 0.33
+2. f(100, 2) = 0.01 ⋅ round(0.25 ⋅ 2 ⋅ 100 + 8) = 0.01 ⋅ round(50 + 8) = 0.58
+3. f(100, −1) = 0.01 ⋅ round(0.25 ⋅ (−1) ⋅ 100 + 8) = 0.01 ⋅ round(−25 + 8) = −0.17
+4. f(300, 1) = 0.01 ⋅ round(0.25 ⋅ 1 ⋅ 300 + 8) = 0.01 ⋅ round(75 + 8) = 0.83[/cytat]
+[b]3.24 Spowolnienie przeciwnika[/b]
+f([i]x[/i], [i]n[/i]) = 0.01 ⋅ round(2 ⁄ 7 ⋅ [i]nx[/i] + 8)
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości statystyki „spowolnienie przeciwnika” w zależności od różnej liczby rozdanych bonusów oraz różnego poziomu przedmiotu.
+ITEM#4824356e795942a5475b83f07fffbc903301fa16c2a5b8eaf6cae1cb5efb9a37.gordion ITEM#5624e2da064279686480c20e6031194ab114fa815d25a56fd0b972f80f1e1528.gordion ITEM#4629b0c2c3a06fe68660307203063da8afd6819e1c31f727a0086265f22c20cc.gordion
+
+
+1. f(100, 1) = 0.01 ⋅ round(2 ⁄ 7 ⋅ 1 ⋅ 100 + 8) = 0.01 ⋅ round(200 ⁄ 7 + 8) = 0.37
+2. f(100, 2) = 0.01 ⋅ round(2 ⁄ 7 ⋅ 2 ⋅ 100 + 8) = 0.01 ⋅ round(400 ⁄ 7 + 8) = 0.65
+3. f(300, 1) = 0.01 ⋅ round(2 ⁄ 7 ⋅ 1 ⋅ 300 + 8) = 0.01 ⋅ round(600 ⁄ 7 + 8) = 0.94[/cytat]
+[center]⁂[/center]
+[b]4 Bonusy manualne[/b]
+Bonusy manualne są bonusami nadanymi, których liczba należy do zestandaryzowanego zakresu i jest ustalana ręcznie przez twórcę przedmiotu.
+
+[b]4.1 Kontratak[/b]
+Pojedynczy bonus: wartości mniejsze lub równe 50%.
+Podwójny bonus: wartości większe od 50%.
+
+Standardowo przydzielane są następujące wartości:
+Pojedynczy bonus: 40% lub 50%.
+Podwójny bonus: 60%.
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości statystyki „kontratak” w zależności od różnej liczby rozdanych bonusów.
+ITEM#74412ab6de8d78b90f7c811357674dc5536f459085ae95139adc309efb56a2fb.gordion ITEM#ce69f58c4ce8a07ee24a153d8e314b4ac39ceb6bb4d3e566971650d649874546.gordion[/cytat]
+[b]4.2 Przebicie[/b]
+Pojedynczy bonus: wartości mniejsze lub równe 20%.
+Podwójny bonus: wartości większe od 20%.
+
+Standardowo przydzielane są następujące wartości:
+Pojedynczy bonus: 15% lub 20%.
+Podwójny bonus: 25%.
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości statystyki „przebicie” w zależności od różnej liczby rozdanych bonusów.
+ITEM#8f9192c79af29f4c7fde4ecf180e2d2bcff0b67f78ec87677d184e772686c8a1.gordion ITEM#f03da750aa54fded6fce985c35a2934f1ca7ccbc61c6ccd0452ebe02f39eeb0c.gordion[/cytat]
+[b]4.3 Blok przebicia[/b]
+Zawsze pojedynczy bonus. Standardowo przydzielane są wartości 40%, 50% lub 60%.
+
+[b]4.4 Głęboka rana[/b]
+Zawsze pojedynczy bonus, który nie wlicza się do liczby bonusów nadanych w przedmiocie. Zamiast tego osłabia istniejący bonus obrażeń fizycznych.
+
+Szansa na głęboką ranę ustalana jest ręcznie i wynosi 20%, 23% lub 25%.
+
+Obrażenia głębokiej rany liczone są przez silnik gry: f([i]x[/i]) = round(0.0051[i]c[/i] ⋅ R([i]x[/i])),
+gdzie [i]c[/i] wynosi:
+​ ​ ​ • 2.75 dla broni jednoręcznych,
+​ ​ ​ • 3.4 dla broni półtoraręcznych,
+​ ​ ​ • 4.8 dla broni dwuręcznych,
+​ ​ ​ • 3.25 dla broni dystansowych,
+​ ​ ​ • 1.15 dla broni pomocniczych.
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości obrażeń od głębokiej rany w zależności od różnego typu przedmiotu.
+ITEM#6aa8d54b866c09e86ac25a291d22009b3adbe9814055d51589740f8c0d83bb6f.gordion ITEM#b77fdbc643789f7ea745554fe3c4f3f53e8b0f69212d5ae75c4ca7a7b67e3e38.gordion ITEM#574967b5c89be083f4c75f7c13afc405241a6c0afe50931594cb05e24c9c5455.gordion ITEM#40aaf062a33fc77563cae0dd57ee0b4241ea2f690398172b0409dbc3479faea6.gordion ITEM#4254f2af237000c1a63dfa2ccd3f71b3873c33229d277bd30743fcacd8621ae8.gordion
+
+
+1. f(100) = round(0.0051 ⋅ 2.75 ⋅ (100² + 130 ⋅ 100)) = round(0.0051 ⋅ 63 250) = 323
+2. f(100) = round(0.0051 ⋅ 3.4 ⋅ (100² + 130 ⋅ 100)) = round(0.0051 ⋅ 78 200) = 399
+3. f(100) = round(0.0051 ⋅ 4.8 ⋅ (100² + 130 ⋅ 100)) = round(0.0051 ⋅ 110 400) = 563
+4. f(100) = round(0.0051 ⋅ 3.25 ⋅ (100² + 130 ⋅ 100)) = round(0.0051 ⋅ 74 750) = 381
+5. f(100) = round(0.0051 ⋅ 1.15 ⋅ (100² + 130 ⋅ 100)) = round(0.0051 ⋅ 26 450) = 135[/cytat]
+[b]4.5 Trucizna[/b]
+Zawsze pojedynczy bonus, który nie wlicza się do liczby bonusów nadanych w przedmiocie. Zamiast tego osłabia istniejący bonus obrażeń fizycznych.
+
+Obrażenia trucizny liczone są przez silnik gry: f([i]x[/i]) = round(0.051[i]c[/i] ⋅ R([i]x[/i])),
+gdzie [i]c[/i] wynosi:
+​ ​ ​ • 0.25 dla broni jednoręcznych,
+​ ​ ​ • 0.25 dla broni półtoraręcznych,
+​ ​ ​ • 0.25 dla broni dwuręcznych,
+​ ​ ​ • 0.35 dla broni dystansowych,
+​ ​ ​ • 0.105 dla broni pomocniczych,
+​ ​ ​ • 0.085 dla strzał i kołczanów.
+
+Spowolnienie trucizny liczone jest przez silnik gry: g([i]x[/i]) = 0.01 ⋅ round([i]cx[/i]),
+gdzie [i]c[/i] wynosi:
+​ ​ ​ • 0.892475 dla broni jednoręcznych,
+​ ​ ​ • 0.892475 dla broni półtoraręcznych,
+​ ​ ​ • 0.892475 dla broni dwuręcznych,
+​ ​ ​ • 0.4462375 dla broni dystansowych,
+​ ​ ​ • 0.6375 dla broni pomocniczych,
+​ ​ ​ • 0.4462375 dla strzał i kołczanów.
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości statystyki „trucizna” w zależności od różnego typu przedmiotu.
+ITEM#1905906a63590dae78a2c166a12321871127f820964d0084813eb1f2e9cddcfc.gordion ITEM#3378086095626818a89c24cb5451d9e3ce322fd73c57176d9461bccf5e0386bc.gordion ITEM#ac9e72c6ea959221ea1c3a8b14cc2c33a56f2c2324191e0603161e817a9f9661.gordion ITEM#3cefdba34ca7ce6ebac90c05151e8e485afd49a055f30d94c2292a42536bca10.gordion ITEM#76ad9f97b1dac08bb3af385c7f7b0c405281dbb02d2b96ce585f371c523fb7ac.gordion ITEM#35e1a2ceafbed823b5744a8dead63854be8290d42bc82310b2f8b4ddf40fb53e.gordion
+
+
+1. f(100) = round(0.051 ⋅ 0.25 ⋅ (100² + 130 ⋅ 100)) = round(0.0051 ⋅ 57 500) = 293
+​ ​ ​ ​ g(100) = 0.01 ⋅ round(0.892475 ⋅ 100) = 0.89
+2. f(100) = round(0.051 ⋅ 0.25 ⋅ (100² + 130 ⋅ 100)) = round(0.0051 ⋅ 57 500) = 293
+​ ​ ​ ​ g(100) = 0.01 ⋅ round(0.892475 ⋅ 100) = 0.89
+3. f(100) = round(0.051 ⋅ 0.25 ⋅ (100² + 130 ⋅ 100)) = round(0.0051 ⋅ 57 500) = 293
+​ ​ ​ ​ g(100) = 0.01 ⋅ round(0.892475 ⋅ 100) = 0.89
+4. f(100) = round(0.051 ⋅ 0.35 ⋅ (100² + 130 ⋅ 100)) = round(0.0051 ⋅ 80 500) = 411
+​ ​ ​ ​ g(100) = 0.01 ⋅ round(0.4462375 ⋅ 100) = 0.45
+5. f(100) = round(0.051 ⋅ 0.105 ⋅ (100² + 130 ⋅ 100)) = round(0.0051 ⋅ 24 150) = 123
+​ ​ ​ ​ g(100) = 0.01 ⋅ round(0.6375 ⋅ 100) = 0.64
+6. f(100) = round(0.051 ⋅ 0.085 ⋅ (100² + 130 ⋅ 100)) = round(0.0051 ⋅ 19 550) = 100
+​ ​ ​ ​ g(100) = 0.01 ⋅ round(0.4462375 ⋅ 100) = 0.45[/cytat]
+[b]4.6 Modyfikator rzadkości[/b]
+W Margonem istnieje niewidoczny bonus modyfikujący rzadkość przedmiotu, często nazywany bonusem w atak w broniach lub bonusem w obronę w pozostałych przedmiotach. Bonus ten nie jest wyświetlany przez klienta gry, ale liczony jest on do liczby bonusów nadanych przedmiotu.
+
+Modyfikator rzadkości jest zawsze pojedynczym bonusem, dodatnim lub ujemnym, który odpowiednio podnosi lub obniża rzadkość przedmiotu o 1 stopień, tj. parametr [i]r[/i] w funkcji R([i]x[/i]). Oznacza to, że wpływa on na wszystkie statystyki zależne od rzadkości przedmiotu.
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano obrażenia broni jednoręcznej w zależności od rzadkości przedmiotu oraz modyfikatora rzadkości.
+ITEM#c2af16c31d7a1be5508163d3df04fbe7f44ed767f359cf25367db3d80da08502.gordion ITEM#951b442b98d9b549403b724d7145815b3e34b7e2879adca2e4b87723b5f793f8.gordion ITEM#435bab8291e65e123d4f92f32aec093e4f80ced3f931248816a1d56379808b95.gordion ITEM#7cc62a6f7ee73da8ebb7a5fdddd7c735a52a998b509acc50cfbe564fb7809b38.gordion ITEM#8d78c4530cc6614ed6643d65856e86e948b2e47c7c95daf4bd9d9962773e323e.gordion
+
+
+Poniżej zaprezentowano wartości natywnych statystyk zbroi w zależności od rzadkości przedmiotu oraz modyfikatora rzadkości.
+ITEM#51c3d28b7d5586db255b6b6e57ff2637aaca644f6bd8c94e04966beb8996a3f6.gordion ITEM#15e0dcce76a8190d0f81eb40eaf1d3213d47d7c99799ee65f4dc2ec85d133513.gordion ITEM#73431f4d137c8819ef758948ab86addd7c3a5fc52d1897bf8f5788123f7fdbec.gordion ITEM#dc62938f992f9daa78c3bb787199224cd0b689b178081608d387ef1e1dea4f85.gordion ITEM#b49009ea2fbda3590eaf217e2d83ab38daa854e9634865acd2ee64e44c2922a7.gordion
+
+
+Heroiczne przedmioty z ujemnym modyfikatorem rzadkości mają wartości statystyk takie same jak przedmioty unikatowe bez modyfikatora rzadkości. Heroiczne przedmioty z dodatnim modyfikatorem rzadkości mają wartości statystyk takie same jak przedmioty legendarne bez modyfikatora rzadkości.[/cytat]
+
+[center]⁂[/center]
+[b]5 Bonusy przeklęte[/b]
+Bonusy przeklęte są bonusami nadanymi, które występują jedynie w przedmiotach przeklętych. Każdy przedmiot przeklęty posiada dokładnie jeden bonus przeklęty.
+
+[b]5.1 Obniżanie niszczenia pancerza[/b]
+f([i]x[/i]) = round(0.0003([i]x[/i]² + 130[i]x[/i]) + 1)
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości statystyki „obniżanie niszczenia pancerza” w zależności od różnego poziomu przedmiotu.
+ITEM#3394a8a83e9eb08c9c0bc964c0e9434cff61d6bacde64b00c1cce201fbaa72c7.gordion ITEM#3c22ac5ae008ad35ed99cdb16be5f9328b56f18d32975451b264327bce249ce5.gordion
+
+
+1. f(100) = round(0.0003 ⋅ (100² + 130 ⋅ 100) + 1) = round(0.0003 ⋅ 23 000 + 1) = 8
+2. f(300) = round(0.0003 ⋅ (300² + 130 ⋅ 300) + 1) = round(0.0003 ⋅ 129 000 + 1) = 40[/cytat]
+[b]5.2 Obniżanie siły ciosu krytycznego[/b]
+f([i]x[/i]) = ⌊0.02([i]x[/i] − 1)⌋ − ⌊0.005([i]x[/i] + 149)⌋ + 5
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości statystyki „obniżanie siły ciosu krytycznego” w zależności od różnego poziomu przedmiotu.
+ITEM#77f338f2c6302654c1f1819b6a69f582b90b9e43932e34d86eeb699f777c74fd.gordion ITEM#f5d212366cc0846d910c5c0cfd115e26d8b2d40e6df57d516ab97bdc21bc1af7.gordion
+
+
+1. f(100) = ⌊0.02 ⋅ 99⌋ − ⌊0.005 ⋅ 249⌋ + 5 = 1 − 1 + 5 = 5
+2. f(300) = ⌊0.02 ⋅ 299⌋ − ⌊0.005 ⋅ 449⌋ + 5 = 5 − 2 + 5 = 8[/cytat]
+[b]5.3 Obniżanie niszczenia zasobów[/b]
+Obniżanie niszczenia many: f([i]x[/i]) = round(0.03[i]x[/i] + 3.75).
+Obniżanie niszczenia energii: g([i]x[/i]) = round(0.444 ⋅ f([i]x[/i])).
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości statystyki „obniżanie niszczenia zasobów” w zależności od różnego poziomu przedmiotu.
+ITEM#172a80232b9f93734e5ed2de3db1ae5d0b83899c42d1f032262bfda446d3b8f8.gordion ITEM#d7c7290e064cabcd6691addc132959bae8d6b700812bea95b761dc4f0fa683ba.gordion
+
+
+1. f(100) = round(0.03 ⋅ 100 + 3.25) = round(3 + 3.75) = 7
+​ ​ ​ ​ g(100) = round(0.444 ⋅ f(100)) = round(0.444 ⋅ 7) = 3
+2. f(300) = round(0.03 ⋅ 300 + 3.25) = round(9 + 3.75) = 13
+​ ​ ​ ​ g(300) = round(0.444 ⋅ f(300)) = round(0.444 ⋅ 13) = 6[/cytat]
+[b]5.4 Obniżanie leczenia przeciwnika[/b]
+f([i]x[/i]) = round(0.75 ⋅ (0.004[i]px[/i]² + (0.8 + 0.52[i]p[/i])[i]x[/i]) + 6)
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano wartości statystyki „obniżanie leczenia przeciwnika” w zależności od różnego poziomu przedmiotu oraz różnego typu przedmiotu.
+ITEM#b32cb06f0159b1b57f0f0667777abe16863627f918eeb632d3790e9c4eabce6c.gordion ITEM#404c0dedc3c556faaf7b4956614a51a863930e1ceb60d7b538d4b3f1df4d09a7.gordion ITEM#81beb2888a79150e5a9f3f2083a0c9fca103f487a62d7e485e6f4862585091c9.gordion
+
+
+1. f(100) = round(0.75 ⋅ (0.004 ⋅ 1 ⋅ 100² + (0.8 + 0.52 ⋅ 1) ⋅ 100) + 6) = round(0.75 ⋅ 172 + 6) = 135
+2. f(100) = round(0.75 ⋅ (0.004 ⋅ 1 ⋅ 300² + (0.8 + 0.52 ⋅ 1) ⋅ 300) + 6) = round(0.75 ⋅ 756 + 6) = 573
+3. f(100) = round(0.75 ⋅ (0.004 ⋅ 0.25 ⋅ 100² + (0.8 + 0.52 ⋅ 0.25) ⋅ 100) + 6) = round(0.75 ⋅ 103 + 6) = 83[/cytat]

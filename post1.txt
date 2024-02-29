@@ -1,0 +1,195 @@
+Przedmioty są jednym z głównych aspektów gry w Margonem. Z tego względu przydatny jest opis dokładnego sposobu obliczania wartości ich statystyk. Celem tego tematu jest uzupełnienie informacji z zakresu przedmiotów przedstawionych w oficjalnej mechanice gry o rzeczywiste przykłady.
+
+[center]⁂[/center]
+[b]1 Definicje[/b]
+Na wstępie, aby uniknąć nieścisłości, przedstawione są definicje używanych w temacie oznaczeń i przyjętych konwencji.
+
+[b]1.1 Notacja[/b]
+Do oddzielenia części całkowitej od części ułamkowej w zapisie liczby używana jest kropka mimo tego, że w języku polskim tradycyjnie wykorzystuje się do tego przecinek.
+
+Zmienne oraz parametry oznaczone są za pomocą pochyłego kroju pisma. Przykłady, które obrazują poprzedzający je opis, umieszczone są w bloku cytatu i rozpoczynają się pogrubionym wyrazem „przykład”.
+
+[b]1.2 Pojęcia[/b]
+Do statystyk przedmiotu zaliczana jest większość parametrów przedmiotu, np. siła, stan związania, opis lub rzadkość. Powszechne parametry, które nie są statystykami to:
+​ ​ ​ ​• nazwa przedmiotu,
+​ ​ ​ ​• grafika przedmiotu,
+​ ​ ​ ​• typ przedmiotu (nazywany również klasą przedmiotu),
+​ ​ ​ ​• wartość przedmiotu.
+
+Powyższa definicja jest intuicyjna, ale nieścisła. Precyzyjna definicja pojęcia „statystyka przedmiotu” to:
+
+Niech [i]s[/i] będzie ciągiem znaków przypisanym do właściwości „stat” danych przedmiotu zwróconych przez silnik gry. Niech S będzie zbiorem powstałym z rozdzielenia ciągu [i]s[/i] na podciągi za pomocą średnika. Zbiór S′ to zbiór zawierający pary powstałe w wyniku rozdzielenia ciągów znaków należących do zbioru S za pomocą znaku równości, gdzie pierwszy element pary to pierwszy podciąg powstały podczas rozdzielenia, a drugi element pary to drugi podciąg powstały podczas rozdzielenia. Wtedy statystyka przedmiotu to para ([i]n[/i], [i]v[/i]) należąca do zbioru S′, gdzie [i]n[/i] to nazwa statystyki, a [i]v[/i] to jej wartość.
+[cytat][b]Przykład[/b]
+Poniższy przedmiot posiada 4 statystyki: siłę, rzadkość, poziom wymagany do założenia przedmiotu i opis.
+ITEM#652f03012c8b61d0fdc2b6d0a5c20944d498a199157b414157f5a8ea8dad06cf.gordion
+
+
+Wartość właściwości „stat” danych tego przedmiotu to: "ds=23;lvl=35;opis=Przedmiot posiada…;rarity=unique". Długi opis przedmiotu został skrócony, a jego pominięta część zastąpiona wielokropkiem.
+
+Zbiór S dla tego przedmiotu ma następującą wartość:
+[code]{
+    "ds=23",
+    "lvl=35",
+    "opis=Przedmiot posiada…",
+    "rarity=unique",
+}[/code]
+Zbiór S′ to:
+[code]{
+    ("ds", "23"),
+    ("lvl", "35"),
+    ("opis", "Przedmiot posiada…"),
+    ("rarity", "unique"),
+}[/code]
+Wymienione pary to statystyki powyższego przedmiotu.[/cytat]
+Statystyki przedmiotu wpływające na statystyki postaci, składają się z danej liczby bonusów, która jest następnie przeliczana przez silnik gry na konkretną wartość statystyki.
+[cytat][b]Przykład[/b]
+Poniższe dwa przedmioty posiadają tę samą statystykę: unik.
+ITEM#279a60d63b36c192f0521bb429349717993fae3217dd766065d4fa8cb0c69947.gordion ITEM#bc36d567e1c767182f062977e1b50264343571f0cfd0418fbb125f9de848207d.gordion
+
+
+W pierwszym przedmiocie na statystykę unik składa się tylko 1 bonus, podczas gdy w drugim przedmiocie są to 2 bonusy. Przekłada się to na różnicę w wynikowej wartości statystyki.[/cytat]
+Bonusy dzielą się na bonusy nadane, czyli takie, które zostały dodane do przedmiotu ręcznie przez osobę tworzącą go i bonusy natywne, tj. bonusy istniejące w przedmiocie domyślnie ze względu na jego typ lub ograniczenie profesji, które mogą go użyć.
+
+[b]1.3 Zbiory[/b]
+ℝ – zbiór liczb rzeczywistych.
+ℕ – zbiór liczb naturalnych włącznie z 0.
+ℕ⁺ – zbiór liczb naturalnych bez 0.
+ℤ – zbiór liczb całkowitych.
+ℤ* – zbiór liczb całkowitych bez 0.
+[[i]a[/i]‥[i]b[/i]] – zbiór liczb całkowitych większych od lub równych [i]a[/i] i mniejszych od lub równych [i]b[/i].
+
+[b]1.4 Zmienne[/b]
+[i]l[/i] ∈ ℕ⁺ – poziom przedmiotu, tj. poziom wymagany do użycia przedmiotu. Jeżeli przedmiot nie posiada wymagań poziomowych, to przyjmowana jest wartość 1; wyjątkiem są błogosławieństwa, które w takim przypadku przyjmują wartość równą poziomowi postaci gracza. Ponadto obniżenie wymagań poziomowych przedmiotu nie obniża wartości zmiennej [i]l[/i].
+[i]u[/i] ∈ [0‥5] – poziom ulepszenia przedmiotu.
+[i]n[/i] ∈ ℤ* – liczba bonusów nadanych danej statystyce przedmiotu. Należy zauważyć, że liczba bonusów jest zdefiniowana jako różna od 0. W praktyce może istnieć potrzeba rozszerzenia dziedziny zmiennej [i]n[/i] na cały zbiór liczb całkowitych. W takim przypadku funkcje operujące na tej zmiennej powinny zostać zmienione tak, by dla argumentu [i]n[/i] równego 0 zwracana była wartość 0.
+[i]p[/i] – moc przedmiotu:
+​ ​ ​ ​• 0.75 dla tarcz,
+​ ​ ​ ​• 0.33 dla hełmów,
+​ ​ ​ ​• 0.3 dla butów,
+​ ​ ​ ​• 0.25 dla rękawic,
+​ ​ ​ ​• 1 dla pozostałych przedmiotów.
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano przedmioty, których typ wpływa na wartość bonusów nadanych oraz natywnych.
+ITEM#5a87c7960aa6e061ee2611d472417e3881ed28ae10b4c53325aa951030cc51cb.gordion ITEM#51e8366cbe486e14dd97266763afcd28834c34d3703fe88ee162335ab34861a5.gordion ITEM#81f03fa260a868869d6cc108330c18cc2d50d0da26bef3c829257da6242ff534.gordion ITEM#03c49f870f94649bfe6292505b64f327d73d720344ec8679f65cdc2f0a10785b.gordion ITEM#5e117a85f68e36b27fa0163f0089022473a3594f443419272401e79b7f5d2b98.gordion[/cytat][i]x[/i] – poziom statystyki. Wartość ta używana jest do przeliczania bonusów na wartości statystyk i uwzględnia ulepszenie przedmiotu:
+
+[center][i]x[/i] = [i]l[/i] + sgn([i]n[/i]) ⋅ [i]u[/i] ⋅ round(0.03[i]l[/i])[/center]
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano przedmiot ulepszony na poziom 3, który posiada następujące bonusy:
+​ ​ ​ ​• pojedynczy bonus w intelekt,
+​ ​ ​ ​• pojedynczy ujemny bonus w siłę,
+​ ​ ​ ​• podwójny ujemny bonus w zręczność,
+​ ​ ​ ​• pojedynczy bonus w unik.
+
+ITEM#a31531e34c67643ec0075a1cf04bcb689e622a8fc864f5b591688dda46bf9c03.gordion
+
+
+Wartości statystyk „intelekt” i „unik” są obliczone tak, jakby przedmiot miał poziom 100 + 3 ⋅ round(0.03 ⋅ 100) = 109. Wartości statystyk „siła” i „zręczność” są obliczone tak, jakby przedmiot miał poziom 100 − 3 ⋅ round(0.03 ⋅ 100) = 91.[/cytat]
+[b]1.5 Funkcje[/b]
+round([i]x[/i]) – zaokrąglenie liczby [i]x[/i] do najbliższej liczby całkowitej. Połówki zaokrąglane są w kierunku od 0.
+[cytat][b]Przykład[/b]
+round(5.5) = 6
+round(−5.5) = −6[/cytat]⌊[i]x[/i]⌋ – zaokrąglenie liczby [i]x[/i] do najbliższej liczby całkowitej w dół.
+⌈[i]x[/i]⌉ – zaokrąglenie liczby [i]x[/i] do najbliższej liczby całkowitej w górę.
+sgn([i]x[/i]) – znak liczby [i]x[/i], tj. 1, gdy [i]x[/i] > 0, −1, gdy [i]x[/i] < 0 lub 0, gdy [i]x[/i] = 0.
+mod([i]x[/i], [i]n[/i]) – reszta z dzielenia [i]x[/i] przez [i]n[/i], gdzie [i]x[/i] ∈ ℕ, [i]n[/i] ∈ ℕ⁺.
+
+Uzależnienie wartości statystyki od rzadkości przedmiotu określone jest przez następującą funkcję:
+
+[center]R([i]x[/i]) = [i]x[/i]² + (130 + ⌈10 ⁄ 3 ⋅ [i]r[/i]⌉) [i]x[/i] + (130 + 390[i]r[/i]) sgn([i]r[/i]),[/center]
+gdzie [i]r[/i] wynosi:
+​ ​ ​ • 0 dla przedmiotów zwykłych,
+​ ​ ​ • 1 dla przedmiotów unikatowych,
+​ ​ ​ • 2 dla przedmiotów heroicznych i ulepszonych,
+​ ​ ​ • 3 dla przedmiotów legendarnych,
+​ ​ ​ • 4 dla artefaktów.
+[cytat][b]Przykład[/b]
+Poniżej zaprezentowano miecze jednoręczne, których obrażenia ulegają zmianie na skutek zmiany rzadkości przedmiotu.
+ITEM#128a6bedd68826e482e93ea5c4efee9ec3c761bbc6ce8effe86e6503a5d0e12e.gordion ITEM#1c6dec6c9dd54b23f24070fc92658962c6a130c4aa6ceea150d029aeafba8335.gordion ITEM#c3f161e7236761557a7771ff2de1477e6c7793988db6592205d90695002dec22.gordion ITEM#4c7d9ca8fad394129dd375f106eb52ef84c0b83e25f3b7f1edb23dc9eb33f959.gordion ITEM#6932d9c5baba27925f6be5994a1a2853d84c30c84adc37b4ca472d9f0094b26c.gordion ITEM#52c8bd87e859d55823510678fdc180a716cc2437c44f84804bd966247814894e.gordion
+
+
+Poniżej zaprezentowano zbroje, których wartości niektórych bonusów natywnych ulegają zmianie na skutek zmiany rzadkości przedmiotu.
+ITEM#b481a1463446555d48cbf06a278bf69e58a01609df754cf4b4cd71ed2ea85eb1.gordion ITEM#6d9fe17469e1a45456c3ebcc076a39ebb3815c30db4d17db16e11ca5b33a4ad3.gordion ITEM#7e17af4980be0070ceb5dfcbf7f571ebc9ef7a11258cef5917eace937877fe9c.gordion ITEM#4dc136cebc5861ff3ab0be7001070263776433ac9ed0fed4f8807a7747b2d295.gordion ITEM#916f3c9339ff51283fd8cec101d1ea34be3d77645b344982f36c00e5b6e2b213.gordion ITEM#fe23f80f1c50655fa1311730a38fd4ee44dc4ae3c627c9bec435694c989c8844.gordion[/cytat]
+[b]1.6 Założenia[/b]
+Domyślną dziedziną zmiennych jest zbiór liczb rzeczywistych, o ile dana zmienna nie została wcześniej zdefiniowana inaczej.
+[cytat][b]Przykład[/b]
+Załóżmy, że zmienna [i]v[/i] zdefiniowana jest następująco:
+
+[i]v[/i] ∈ ℕ – wartość przedmiotu w złocie.
+
+Następnie zdefiniowane są dwie funkcje:
+
+f([i]v[/i]) = 2[i]v[/i]
+g([i]x[/i]) = 2[i]x[/i]
+
+Argument funkcji f posiada tę samą nazwę jak zdefiniowana uprzednio zmienna, co oznacza, że definicja tej zmiennej aplikowana jest również do tego argumentu. Wartość f(2) wynosi w tym przypadku 4, ale wartość f(2.5) jest niezdefiniowana, ponieważ 2.5 nie jest liczbą naturalną.
+
+Z kolei argument funkcji g nie został wcześniej zdefiniowany, więc jego dziedziną jest zbiór liczb rzeczywistych.[/cytat]
+Przy używaniu informacji przedstawionych w tym temacie, należy wziąć pod uwagę, że silnik gry operuje na liczbach zmiennoprzecinkowych. Różnica pomiędzy tym rodzajem liczb a liczbami rzeczywistymi może w szczególnych przypadkach prowadzić do rozbieżności.
+
+Profesje oznaczane są ich powszechnie przyjętymi skrótami: w – wojownik, p – paladyn, b – tancerz ostrzy, m – mag, t – tropiciel, h – łowca. Łączenia profesji zapisywane są jako ciąg jednoliterowych skrótów poszczególnych profesji w kolejności zgodnej z kolejnością wyliczonych profesji.
+[cytat][b]Przykład[/b]
+Jeżeli dany przedmiot może zostać założony jedynie przez magów, paladynów i tropicieli, to poprawnym zapisem tego wymogu profesji jest „pmt”.[/cytat]
+Jeżeli na wartość danej statystyki przedmiotu składają się jednocześnie bonusy nadane i bonus natywny, to zaokrąglanie i wszystkie operacje wykonywane na zaokrąglonym wyniku należy wykonać na sumie wartości tych bonusów.
+[cytat][b]Przykład[/b]
+Poniżej przedstawiono zbroję, w której na statystyki „pancerz” i „szybkość ataku” składają się bonus natywny oraz pojedynczy bonus nadany.
+ITEM#66810c140932f5551f3a0dfe041f4bbf06ca84e4420b92ac5d1226975713e68c.gordion
+
+
+Zaokrąglanie (wraz z pozostałymi operacjami) jest wykonywane na sumie obu bonusów:
+​ ​ ​ • pancerz: round(363.375 + 64.125) = 428,
+​ ​ ​ • szybkość ataku: 0.01 ⋅ round(95 ⁄ 3 + 31.75) = 0.63.
+
+Gdybyśmy zaokrąglili bonusy osobno, a następnie je zsumowali, wynik byłby niepoprawny:
+​ ​ ​ • pancerz: round(363.375) + round(64.125) = 363 + 64 = 427 ≠ 428,
+​ ​ ​ • szybkość ataku: 0.01 ⋅ round(95 ⁄ 3) + 0.01 ⋅ round(31.75) = 0.32 + 0.32 = 0.64 ≠ 0.63.[/cytat]
+[center]⁂[/center]
+[b]2 Liczba bonusów nadanych[/b]
+Większość przedmiotów posiada zestandaryzowaną liczbę bonusów nadanych, która zależy od typu i rzadkości przedmiotu. Liczba ta jest jednak wyłącznie konwencją i istnieją przedmioty, które ją łamią. Sama gra nie wymaga od twórcy przedmiotu stosowania tej konwencji.
+
+[b]2.1 Zbroje, bronie jednoręczne, półtoraręczne, dwuręczne, dystansowe i pomocnicze, kołczany, różdżki, orby i tarcze[/b]
+​ ​ ​ • 1 bonus w przedmiotach zwykłych,
+​ ​ ​ • 3 bonusy w przedmiotach unikatowych,
+​ ​ ​ • 6 bonusów w przedmiotach heroicznych,
+​ ​ ​ • 7 bonusów w przedmiotach ulepszonych,
+​ ​ ​ • 9 bonusów w przedmiotach legendarnych.
+
+[b]2.2 Strzały[/b]
+​ ​ ​ • 2 bonusy w przedmiotach zwykłych,
+​ ​ ​ • 4 bonusy w przedmiotach unikatowych,
+​ ​ ​ • 8 bonusów w przedmiotach heroicznych,
+​ ​ ​ • 8 bonusów w przedmiotach ulepszonych (ulepszone strzały występujące w grze mają niepoprawną liczbę bonusów: 6–7),
+​ ​ ​ • 12 bonusów w przedmiotach legendarnych.
+
+[b]2.3 Hełmy, rękawice, buty[/b]
+​ ​ ​ • 1 bonus w przedmiotach zwykłych,
+​ ​ ​ • 4 bonusy w przedmiotach unikatowych,
+​ ​ ​ • 8 bonusów w przedmiotach heroicznych i ulepszonych,
+​ ​ ​ • 12 bonusów w przedmiotach legendarnych.
+
+[b]2.4 Pierścienie[/b]
+​ ​ ​ • 5 bonusów w przedmiotach zwykłych,
+​ ​ ​ • 9 bonusów w przedmiotach unikatowych,
+​ ​ ​ • 13 bonusów w przedmiotach heroicznych i ulepszonych,
+​ ​ ​ • 17 bonusów w przedmiotach legendarnych.
+
+[b]2.5 Naszyjniki[/b]
+​ ​ ​ • 6 bonusów w przedmiotach zwykłych,
+​ ​ ​ • 10 bonusów w przedmiotach unikatowych,
+​ ​ ​ • 14 bonusów w przedmiotach heroicznych i ulepszonych,
+​ ​ ​ • 18 bonusów w przedmiotach legendarnych.
+
+[b]2.6 Błogosławieństwa[/b]
+​ ​ ​ • 2 bonusy w przedmiotach zwykłych,
+​ ​ ​ • 3 bonusy w przedmiotach unikatowych,
+​ ​ ​ • 4 bonusy w przedmiotach heroicznych, ulepszonych i legendarnych.
+
+[b]2.7 Dodatkowe modyfikatory[/b]
+Liczba bonusów przedmiotu jest zwiększona o 1, o ile przedmiot spełnia co najmniej jeden z poniższych warunków:
+​ ​ ​ • Przedmiot jest zdobyczą z tytana.
+​ ​ ​ • Przedmiot jest pozyskiwany za pomocą barteru lub rzemiosła.
+​ ​ ​ • Przedmiot jest nagrodą za ukończenie zadania (lub pochodzi ze sklepu dostępnego jedynie po ukończeniu zadania).
+​ ​ ​ • Przedmiot pochodzi z limitowanych aukcji lub licytacji,
+​ ​ ​ • Przedmiot jest błogosławieństwem dostępnym do pozyskania w trakcie wydarzenia czasowego.
+
+Przedmioty przeklęte mają liczbę bonusów zwiększoną o 1.
+[b][/b]
